@@ -145,6 +145,14 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'event_name'=>'イベント名',
+        'sports'=>'スポーツ',
+        'detail'=>'イベント詳細',
+        'image1'=>'画像1',
+        'image2'=>'画像2',
+        'image3'=>'画像3',
+        'image4'=>'画像4',
+    ],
 
 ];

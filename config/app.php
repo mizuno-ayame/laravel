@@ -165,6 +165,9 @@ return [
         /*
          * Package Service Providers...
          */
+        // 追記
+        Intervention\Image\ImageServiceProvider::class,
+
 
         /*
          * Application Service Providers...
@@ -225,6 +228,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        // 追記
+        'InterventionImage' => Intervention\Image\Facades\Image::class,
 
     ],
 
