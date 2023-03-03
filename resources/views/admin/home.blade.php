@@ -13,9 +13,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    
-                    <a href="{{ route('admin.events.create') }}">
-                        <button type="button" class="btn btn-primary">イベント登録</button>
+
+                    <a href="{{ route('admin.events.index') }}">
+                        <button type="button" class="btn btn-primary">イベント一覧</button>
                     </a>
                 </div>
             </div>

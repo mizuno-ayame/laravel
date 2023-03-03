@@ -17,7 +17,9 @@ class EventController extends Controller
      */
     public function index()
     {
-        //
+        $events = Event::paginate(15);
+
+        return view('admin.event.index', ['events' => $events]);
     }
 
     /**
@@ -77,7 +79,7 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        //
+        return view('admin.event.show', ['event' => $event]);
     }
 
     /**
@@ -88,7 +90,7 @@ class EventController extends Controller
      */
     public function edit(Event $event)
     {
-        //
+        return view('admin.event.edit', ['event' => $event]);
     }
 
     /**
@@ -100,7 +102,33 @@ class EventController extends Controller
      */
     public function update(Request $request, Event $event)
     {
-        //
+        $data = $this->eventValidate($request);
+
+        try {
+            DB::beginTransaction();
+
+            // 画像処理
+            $data['image1'] = $request->hasFile('image1') ? $this->eventImage($request->file('image1')) : null;
+            $data['image2'] = $request->hasFile('image2') ? $this->eventImage($request->file('image2')) : null;
+            $data['image3'] = $request->hasFile('image3') ? $this->eventImage($request->file('image3')) : null;
+            $data['image4'] = $request->hasFile('image4') ? $this->eventImage($request->file('image4')) : null;
+
+            $event->event_name = $data['event_name'];
+            $event->sports     = $data['sports'];
+            $event->detail     = $data['detail'];
+            $event->image1     = $data['image1'];
+            if(!empty($data['image2'])) $event->image2 = $data['image2'];
+            if(!empty($data['image3'])) $event->image3 = $data['image3'];
+            if(!empty($data['image4'])) $event->image4 = $data['image4'];
+            $event->save();
+
+            DB::commit();
+        } catch (\Exception $e) {
+            DB::rollBack();
+            report($e);
+            return redirect()->route('admin.events.edit', ['event' => $event->id])->with('error', '処理途中にエラーが発生しました。もう一度お願いします');
+        }
+        return redirect()->route('admin.home.index')->with('status', '編集に成功しました。');
     }
 
     /**
@@ -111,7 +139,8 @@ class EventController extends Controller
      */
     public function destroy(Event $event)
     {
-        //
+        $event->delete();
+        return redirect()->route('admin.home.index')->with('status', '削除しました。');
     }
 
     private function eventValidate($request)
@@ -135,9 +164,9 @@ class EventController extends Controller
         // 取得したファイル名でストレージに保存
         $image->storeAs('public/images', $file_name);
         // 画像圧縮
-        $image = InterventionImage::make('storage/public/images/'.$file_name);
-        $image->orientate();
-        $image->resize(300,200);
+        // $image = InterventionImage::make('storage/public/images/'.$file_name);
+        // $image->orientate();
+        // $image->resize(300,200);
 
         return $file_name;
     }
