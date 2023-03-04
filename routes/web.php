@@ -59,6 +59,9 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         //イベント用
         Route::resource('events', 'EventController');
 
+        //予約用
+        Route::resource('reserve', 'ReserveController');
+
     });
 
 });
