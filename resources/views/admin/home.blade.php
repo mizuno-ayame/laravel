@@ -17,6 +17,9 @@
                     <a href="{{ route('admin.events.index') }}">
                         <button type="button" class="btn btn-primary">イベント一覧</button>
                     </a>
+                    <a href="{{ route('admin.users.index') }}">
+                        <button type="button" class="btn btn-primary">ユーザー一覧</button>
+                    </a>
                 </div>
             </div>
         </div>
