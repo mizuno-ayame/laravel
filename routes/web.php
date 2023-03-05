@@ -60,6 +60,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         Route::resource('events', 'EventController');
 
         //予約用
+        Route::post('/reserve/search/period', 'ReserveController@searchPeriod')->name('search.period');
         Route::resource('reserve', 'ReserveController');
 
     });
