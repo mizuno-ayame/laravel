@@ -54,7 +54,9 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
     Route::middleware('auth:admin')->group(function () {
 
         // TOPページ
-        Route::resource('home', 'HomeController', ['only' => 'index']);
+        Route::get('home', 'HomeController@index');
+        Route::get('users/index', 'HomeController@getUsers')->name('users.index');
+        Route::get('user/{id}/index', 'HomeController@getUser')->name('user.show');
 
         //イベント用
         Route::resource('events', 'EventController');
