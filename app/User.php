@@ -53,4 +53,18 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Reservation');
     }
+
+    /**
+     * Userに紐づくイベントを取得する
+     */
+    public function events()
+    {
+        return $this->hasMany('App\Event', 'user_id', 'id');
+    }
+
+    public function likes()
+    {
+        return $this->hasMany('App\Like');
+    }
+
 }

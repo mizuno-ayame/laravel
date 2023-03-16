@@ -35,6 +35,14 @@ Route::namespace('User')->prefix('user')->name('user.')->group(function () {
         // TOPページ
         Route::resource('home', 'HomeController', ['only' => 'index']);
 
+        // イベント用
+        Route::get('events/index', 'EventController@index')->name('events.index');
+        Route::get('events/{event}/show', 'EventController@show')->name('events.show');
+
+        Route::post('/like', 'LikesController@like');
+
+        // 予約用
+        Route::resource('reserve', 'ReserveController');
     });
 });
 

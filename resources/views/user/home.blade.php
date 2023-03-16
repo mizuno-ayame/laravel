@@ -9,12 +9,17 @@
 
                 <div class="card-body">
                     @if (session('status'))
-                        <div class="alert alert-success" role="alert">
+                        <div class="alert alert-success text-center" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
 
-                    You are logged in!
+                    <a href="{{ route('user.events.index') }}">
+                        <button type="button" class="btn btn-primary">イベント一覧</button>
+                    </a>
+                    <a href="{{ route('user.reserve.create') }}">
+                        <button type="button" class="btn btn-primary">予約登録ページ</button>
+                    </a>
                 </div>
             </div>
         </div>
