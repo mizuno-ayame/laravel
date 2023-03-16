@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 
 
@@ -43,7 +41,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
 
     // ログイン認証関連
     Auth::routes();
-    
+
     // パスワードリセット
     Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
     Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
@@ -59,3 +57,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
     });
 
 });
+
+Route::get('/{any}', function () {
+    return view('welcome');
+})->where('any', '.*');

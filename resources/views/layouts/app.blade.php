@@ -11,6 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -37,11 +38,13 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
                     @if (request()->is('admin*'))
                     @include('layouts.admin-nav')
                     @else
                     @include('layouts.user-nav')
                     @endif
+                    </ul>
                 </div>
             </div>
         </nav>

@@ -1,4 +1,3 @@
-<ul class="navbar-nav ml-auto">
     <!-- Authentication Links -->
     @unless (Auth::guard('admin')->check())
         <li class="nav-item">
@@ -28,4 +27,3 @@
             </div>
         </li>
     @endunless
-</ul>
