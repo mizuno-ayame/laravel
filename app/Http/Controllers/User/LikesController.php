@@ -6,7 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Event;
 use App\Like;
+use App\User;
 use Illuminate\Support\Facades\Auth;
+
 
 class LikesController extends Controller
 {
@@ -30,5 +32,12 @@ class LikesController extends Controller
             'event_likes_count' => $event_likes_count,
         ];
         return response()->json($param); //JSONデータをjQueryに返す
+    }
+
+    public function index()
+    {
+        $likeEvent = User::find(Auth::id())->likeEvents;
+
+        return view('user.event.likeEvent', ['likeEvent' => $likeEvent]);
     }
 }

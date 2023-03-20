@@ -39,6 +39,8 @@ Route::namespace('User')->prefix('user')->name('user.')->group(function () {
         Route::get('events/index', 'EventController@index')->name('events.index');
         Route::get('events/{event}/show', 'EventController@show')->name('events.show');
 
+        // お気に入り機能
+        Route::get('/like/index', 'LikesController@index')->name('like.index');
         Route::post('/like', 'LikesController@like');
 
         // 予約用

@@ -34,6 +34,12 @@
             </span><!-- /.likes -->
         @endif
     @endauth
+    <a href="{{ route('user.events.index') }}">
+        <button type="button" class="btn btn-primary">イベント一覧</button>
+    </a>
+    <a href="{{ route('user.like.index') }}">
+        <button type="button" class="btn btn-primary">お気に入り一覧</button>
+    </a>
     </div>
 </div>
 @endsection

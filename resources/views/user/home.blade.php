@@ -20,6 +20,9 @@
                     <a href="{{ route('user.reserve.create') }}">
                         <button type="button" class="btn btn-primary">予約登録ページ</button>
                     </a>
+                    <a href="{{ route('user.like.index') }}">
+                        <button type="button" class="btn btn-primary">お気に入り一覧</button>
+                    </a>
                 </div>
             </div>
         </div>

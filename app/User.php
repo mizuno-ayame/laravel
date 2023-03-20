@@ -67,4 +67,13 @@ class User extends Authenticatable
         return $this->hasMany('App\Like');
     }
 
+    public function likeEvents()
+    {
+        return $this->belongsToMany(
+            'App\Event', // リレーションの相手先モデル名
+            'likes',    // 中間テーブル
+            'user_id',  // 中間テーブルとUserモデルを結びつける
+            'event_id'   // 中間テーブルとEventモデルを結びつける
+        );
+    }
 }
