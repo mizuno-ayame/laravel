@@ -2,17 +2,16 @@
     <div>
         <div id="content">
             <header class="column-xs main-xs-between cross-xs-center full-image-wrap">
-            <h1>帝産クラブについて</h1>
-            <img class="full-image" src="https://images.unsplash.com/photo-1458324124043-7803d4fec380?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=df280ed170d2a9e25506f2d3db42f4f9" alt="">
+            <img class="full-image" src="/clubtop.jpg" alt="">
         </header>
         <main id="main">
             <section class="row-xs main-xs-center cross-xs-center">
                 <h2>about us</h2>
-                <p>帝産クラブには、小学１年生から社会人の選手が所属しています。ショートトラックがメインのクラブチームになりますが、冬はスピードスケートをやっている選手も多数います。<br>初心者経験者問わずクラブ員を募集しています！私たちとスケートしませんか？</p>
+                <p>帝産クラブには、小学１年生から社会人の選手が所属しています。ショートトラックがメインのクラブチームになりますが、<br>冬はスピードスケートをやっている選手も多数います。初心者経験者問わずクラブ員を募集しています！</p>
             </section>
             <section class="row-xs main-xs-center cross-xs-center">
                 <h2>体験してみませんか</h2>
-                <p>帝産クラブでは、体験入部を行っております。費用は一切かかりません！スケート靴も無料でお貸しします！<br>1回の体験では入部を決意できなければ2回目もお越しください!!</p>
+                <p>帝産クラブでは、体験入部を行っております。費用は一切かかりません！スケート靴も無料でお貸しします！<br>1回の体験で入部を決意できなければ2回目もお越しください!!</p>
             </section>
         </main>
         </div>

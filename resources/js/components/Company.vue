@@ -3,8 +3,7 @@
     <div>
         <div id="content">
             <header class="column-xs main-xs-between cross-xs-center full-image-wrap">
-            <h1>帝産ロッヂについて</h1>
-            <img class="full-image" src="https://images.unsplash.com/photo-1458324124043-7803d4fec380?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=df280ed170d2a9e25506f2d3db42f4f9" alt="">
+            <img class="full-image" src="/20200702_171923.jpg" alt="">
         </header>
         <main id="main">
             <section class="row-xs main-xs-center cross-xs-center">
@@ -13,7 +12,7 @@
             </section>
             <section class="row-xs main-xs-center cross-xs-center">
                 <h2>教育旅行</h2>
-                <p>帝産ロッヂでは十数年来、学年全体の皆様と一校一館を基本として受け入れをして参りました。<br>分宿では決して味わえない一同にしての食事、普段は体験することのない大部屋での宿泊など、オーソドックスな事が一番大切と信じています。<br>一日を通して先生と友と一緒に行動し、大切な時間を有効に組み立てる、そのお手伝いをしていくことが帝産ロッヂの使命です。</p>
+                <p>帝産ロッヂでは十数年来、学年全体の皆様と一校一館を基本として受け入れをして参りました。<br>分宿では決して味わえない一同にしての食事、普段は体験することのない大部屋での宿泊など、<br>オーソドックスな事が一番大切と信じています。<br>一日を通して先生と友と一緒に行動し、大切な時間を有効に組み立てる、そのお手伝いをしていくことが帝産ロッヂの使命です。</p>
             </section>
             <section class="row-xs main-xs-center cross-xs-center">
                 <h2>スポーツ合宿</h2>
@@ -21,6 +20,7 @@
             </section>
         </main>
         </div>
+        <img :src="'/20200702_171923.jpg'" alt="">
     </div>
 
 </template>
