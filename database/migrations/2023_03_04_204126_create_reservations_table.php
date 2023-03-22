@@ -19,14 +19,14 @@ class CreateReservationsTable extends Migration
             $table->string('club_name');
             $table->date('check_in');
             $table->date('check_out');
-            $table->text('meal');
+            $table->text('meal')->nullable();
             $table->text('request');
             $table->text('start_at');
             $table->text('end_at');
             $table->tinyInteger('adult_num');
             $table->tinyInteger('child_num');
-            $table->string('institution');
-            $table->text('infomation');
+            $table->string('institution')->nullable();
+            $table->text('information');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

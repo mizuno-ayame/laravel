@@ -153,6 +153,18 @@ return [
         'image2'=>'画像2',
         'image3'=>'画像3',
         'image4'=>'画像4',
+        'representative' => '代表者名',
+        'club_name'      => '団体名',
+        'check_in'     => 'チェックイン日',
+        'check_out'     => 'チェックアウト日',
+        'meal'     => '食事',
+        'request'     => '要望',
+        'start_at'     => 'チェックイン時間',
+        'end_at'     => 'チェックアウト時間',
+        'adult_num'     => '大人人数',
+        'child_num'     => '子供人数',
+        'institution'     => '利用施設',
+        'infomation'     => '備考',
     ],
 
 ];
