@@ -1899,6 +1899,25 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Access.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Access.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _GoogleMap_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GoogleMap.vue */ "./resources/js/components/GoogleMap.vue");
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    GoogleMap: _GoogleMap_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
@@ -1911,6 +1930,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMap.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/GoogleMap.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      myLatLng: {
+        lat: 35.962269154266004,
+        lng: 138.4762749818901
+      }
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+    var script = document.createElement('script');
+    script.src = "https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyAU_d2-bHrMsjRRZT2HKSY244qwYRr9L9U";
+    script.async = true;
+    document.head.appendChild(script);
+    var timer = setInterval(function () {
+      if (window.google) {
+        clearInterval(timer);
+        var map = new window.google.maps.Map(_this.$refs.map, {
+          center: _this.myLatLng,
+          zoom: 12
+        });
+        new window.google.maps.Marker({
+          position: _this.myLatLng,
+          map: map
+        });
+      }
+    }, 500);
   }
 });
 
@@ -1943,20 +2004,16 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _vm._m(0);
-};
-var staticRenderFns = [function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", [_c("div", {
+  return _c("div", [_c("google-map"), _vm._v(" "), _c("div", {
     staticStyle: {
       height: "500px"
     },
     attrs: {
       id: "map"
     }
-  }), _vm._v(" "), _c("h1", [_vm._v("施設案内")]), _vm._v(" "), _c("h2", [_vm._v("〒384-1305長野県南佐久郡南牧村野辺山1003")]), _vm._v(" "), _c("h2", [_vm._v("帝産ロッヂ")])]);
-}];
+  }), _vm._v(" "), _c("h1", [_vm._v("施設案内")]), _vm._v(" "), _c("h2", [_vm._v("〒384-1305長野県南佐久郡南牧村野辺山1003")]), _vm._v(" "), _c("h2", [_vm._v("帝産ロッヂ")])], 1);
+};
+var staticRenderFns = [];
 render._withStripped = true;
 
 
@@ -2022,29 +2079,25 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_vm._m(0), _vm._v(" "), _c("img", {
-    attrs: {
-      src: "/20200702_171923.jpg",
-      alt: ""
-    }
-  })]);
-};
-var staticRenderFns = [function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
+  return _c("div", [_c("div", {
     attrs: {
       id: "content"
     }
   }, [_c("header", {
     staticClass: "column-xs main-xs-between cross-xs-center full-image-wrap"
   }, [_c("img", {
-    staticClass: "full-image",
     attrs: {
-      src: "/20200702_171923.jpg",
-      alt: ""
+      src: "images/teisanp.png",
+      alt: "",
+      width: "1500px",
+      height: "800px"
     }
-  })]), _vm._v(" "), _c("main", {
+  })]), _vm._v(" "), _vm._m(0)])]);
+};
+var staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("main", {
     attrs: {
       id: "main"
     }
@@ -2054,7 +2107,7 @@ var staticRenderFns = [function () {
     staticClass: "row-xs main-xs-center cross-xs-center"
   }, [_c("h2", [_vm._v("教育旅行")]), _vm._v(" "), _c("p", [_vm._v("帝産ロッヂでは十数年来、学年全体の皆様と一校一館を基本として受け入れをして参りました。"), _c("br"), _vm._v("分宿では決して味わえない一同にしての食事、普段は体験することのない大部屋での宿泊など、"), _c("br"), _vm._v("オーソドックスな事が一番大切と信じています。"), _c("br"), _vm._v("一日を通して先生と友と一緒に行動し、大切な時間を有効に組み立てる、そのお手伝いをしていくことが帝産ロッヂの使命です。")])]), _vm._v(" "), _c("section", {
     staticClass: "row-xs main-xs-center cross-xs-center"
-  }, [_c("h2", [_vm._v("スポーツ合宿")]), _vm._v(" "), _c("p", [_vm._v("帝産ロッヂでは、年間を通じて国内外の健全なアスリート育成のための合宿プログラムを提供しております。八ヶ岳東麓・野辺山高原の大自然の中で、充実した各スポーツ施設をご活用ください。"), _c("br"), _vm._v("オリンピックでメダルを取るために作られた「帝産アイススケートトレーニングセンター」を始め、十六間×1,十間×2の三つの弓道場、強い打ち込みにも安全なスプリングフロアを採用した剣道場、"), _c("br"), _vm._v("天然芝のランニングコース、トレーニングジム、一周200mダブルトラックローラースケート場等を備え、施設、環境、価格でトップを目指すアスリート達を応援します。")])])])]);
+  }, [_c("h2", [_vm._v("スポーツ合宿")]), _vm._v(" "), _c("p", [_vm._v("帝産ロッヂでは、年間を通じて国内外の健全なアスリート育成のための合宿プログラムを提供しております。八ヶ岳東麓・野辺山高原の大自然の中で、充実した各スポーツ施設をご活用ください。"), _c("br"), _vm._v("オリンピックでメダルを取るために作られた「帝産アイススケートトレーニングセンター」を始め、十六間×1,十間×2の三つの弓道場、強い打ち込みにも安全なスプリングフロアを採用した剣道場、"), _c("br"), _vm._v("天然芝のランニングコース、トレーニングジム、一周200mダブルトラックローラースケート場等を備え、施設、環境、価格でトップを目指すアスリート達を応援します。")])])]);
 }];
 render._withStripped = true;
 
@@ -2094,6 +2147,34 @@ var staticRenderFns = [function () {
     staticClass: "card-body"
   }, [_vm._v("\n                    I'm an example component.\n                ")])])])])]);
 }];
+render._withStripped = true;
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMap.vue?vue&type=template&id=70fcb908&":
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/GoogleMap.vue?vue&type=template&id=70fcb908& ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", [_c("div", {
+    ref: "map",
+    staticStyle: {
+      height: "500px",
+      width: "800px"
+    }
+  })]);
+};
+var staticRenderFns = [];
 render._withStripped = true;
 
 
@@ -6734,7 +6815,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nh3[data-v-5692d5a1] {\n    position: relative;\n    padding: 0.25em 0;\n}\nh1[data-v-5692d5a1]:after {\n    content: \"\";\n    display: block;\n    height: 4px;\n    background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);\n}\n", ""]);
+exports.push([module.i, "\nh3[data-v-5692d5a1] {\r\n    position: relative;\r\n    padding: 0.25em 0;\n}\nh1[data-v-5692d5a1]:after {\r\n    content: \"\";\r\n    display: block;\r\n    height: 4px;\r\n    background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);\n}\r\n", ""]);
 
 // exports
 
@@ -6753,7 +6834,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.homeimage[data-v-f2b6376c]{\n    box-shadow: 0 0 5px #333;\n}\n.main img[data-v-f2b6376c]{\n  display: block;\n  transition-duration: 0.3s;\n}\n.main img[data-v-f2b6376c]{\n  transform: scale(1.6);\n  transition-duration: 0.3s;\n}\n.home_compan[data-v-f2b6376c] {\n  display: flex; /*横並び*/\n}\n.company_text[data-v-f2b6376c]{\n    margin: 0 0 0 20px;\n    padding: 0;\n}\n.company_img[data-v-f2b6376c]{\n  width: 640px; /*画像サイズ指定*/\n  margin: 0;\n  padding: 0;\n  overflow: hidden;\n  position: relative;\n}\n", ""]);
+exports.push([module.i, "\n.homeimage[data-v-f2b6376c]{\r\n    box-shadow: 0 0 5px #333;\n}\n.main img[data-v-f2b6376c]{\r\n  display: block;\r\n  transition-duration: 0.3s;\n}\n.main img[data-v-f2b6376c]{\r\n  transform: scale(1.6);\r\n  transition-duration: 0.3s;\n}\n.home_compan[data-v-f2b6376c] {\r\n  display: flex; /*横並び*/\n}\n.company_text[data-v-f2b6376c]{\r\n    margin: 0 0 0 20px;\r\n    padding: 0;\n}\n.company_img[data-v-f2b6376c]{\r\n  width: 640px; /*画像サイズ指定*/\r\n  margin: 0;\r\n  padding: 0;\r\n  overflow: hidden;\r\n  position: relative;\n}\r\n", ""]);
 
 // exports
 
@@ -53887,17 +53968,19 @@ if (token) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Access_vue_vue_type_template_id_366e118f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Access.vue?vue&type=template&id=366e118f&scoped=true& */ "./resources/js/components/Access.vue?vue&type=template&id=366e118f&scoped=true&");
-/* harmony import */ var _Access_vue_vue_type_style_index_0_id_366e118f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Access.vue?vue&type=style&index=0&id=366e118f&scoped=true&lang=css& */ "./resources/js/components/Access.vue?vue&type=style&index=0&id=366e118f&scoped=true&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Access_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Access.vue?vue&type=script&lang=js& */ "./resources/js/components/Access.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Access_vue_vue_type_style_index_0_id_366e118f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Access.vue?vue&type=style&index=0&id=366e118f&scoped=true&lang=css& */ "./resources/js/components/Access.vue?vue&type=style&index=0&id=366e118f&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _Access_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Access_vue_vue_type_template_id_366e118f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Access_vue_vue_type_template_id_366e118f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -53911,6 +53994,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/components/Access.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Access.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/Access.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Access_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Access.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Access.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Access_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -54154,6 +54251,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/GoogleMap.vue":
+/*!***********************************************!*\
+  !*** ./resources/js/components/GoogleMap.vue ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _GoogleMap_vue_vue_type_template_id_70fcb908___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GoogleMap.vue?vue&type=template&id=70fcb908& */ "./resources/js/components/GoogleMap.vue?vue&type=template&id=70fcb908&");
+/* harmony import */ var _GoogleMap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GoogleMap.vue?vue&type=script&lang=js& */ "./resources/js/components/GoogleMap.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _GoogleMap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _GoogleMap_vue_vue_type_template_id_70fcb908___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _GoogleMap_vue_vue_type_template_id_70fcb908___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/GoogleMap.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/GoogleMap.vue?vue&type=script&lang=js&":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/GoogleMap.vue?vue&type=script&lang=js& ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./GoogleMap.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMap.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/GoogleMap.vue?vue&type=template&id=70fcb908&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/GoogleMap.vue?vue&type=template&id=70fcb908& ***!
+  \******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMap_vue_vue_type_template_id_70fcb908___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!../../../node_modules/vue-loader/lib??vue-loader-options!./GoogleMap.vue?vue&type=template&id=70fcb908& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMap.vue?vue&type=template&id=70fcb908&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMap_vue_vue_type_template_id_70fcb908___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMap_vue_vue_type_template_id_70fcb908___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

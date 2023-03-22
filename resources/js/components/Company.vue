@@ -3,7 +3,7 @@
     <div>
         <div id="content">
             <header class="column-xs main-xs-between cross-xs-center full-image-wrap">
-            <img class="full-image" src="/20200702_171923.jpg" alt="">
+                <img :src="'images/teisanp.png'" alt="" width="1500px" height="800px">
         </header>
         <main id="main">
             <section class="row-xs main-xs-center cross-xs-center">
@@ -20,7 +20,7 @@
             </section>
         </main>
         </div>
-        <img :src="'/20200702_171923.jpg'" alt="">
+        <!-- <img :src="'images/20200702_171923.jpg'" alt=""> -->
     </div>
 
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        <google-map />
 
 
     <div id="map" style="height:500px">
@@ -12,6 +12,16 @@
 
     </div>
 </template>
+<script>
+import GoogleMap from './GoogleMap.vue'
+
+export default {
+  components: {
+    GoogleMap
+  }
+}
+</script>
+
 
 <style scoped>
 
