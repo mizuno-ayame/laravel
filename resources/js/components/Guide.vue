@@ -1,26 +1,56 @@
 <template>
     <div>
-        
-        <h3>施設案内</h3>
-        <p>最大収容人数４８０名</p>
-        <p>１階・２階バス、トイレ無し</p>
-        <p>生徒部屋…22人用ー11室（ベッド）</p>
-        <p>生徒部屋…12人用ー3室10人用ー13室8人用ー7室</p>
-        <p>生徒部屋…3人用ー5室2人用ー2室</p>
+
+      <ul>
+        <li class="pink">
+          <h5>宿泊情報</h5>
+          <p>1泊1人あたり9,000円（食事付き<br>最大480名宿泊可能<br>※100人を超える予約の場合は1度ご連絡ください</p>
+        </li>
+        <li class="yellow">
+          <h5>アイスリンク</h5>
+          <p>リンク使用料:1時間33,000円（税込）<br>暖房費:1時間6,600円（税込）</p>
+        </li>
+        <li class="bule">
+          <h5>道場</h5>
+          <p>洗心剣道場:1日10,500円<br>洗心弓道場:利用料無料</p>
+        </li>
+      </ul>
+
 
     </div>
 </template>
 
 <style scoped>
-h3 {
-    position: relative;
-    padding: 0.25em 0;
+li {
+
+display: block;
+width: 320px;
+height: 320px;
+margin: 50px;
+float: left;
+line-height: 100px;
+text-align: center;
+font-weight: bold;
+border-radius: 20px;
+border: solid 1px #35383a;
 }
-h1:after {
-    content: "";
-    display: block;
-    height: 4px;
-    background: -webkit-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
-    background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+/* line-height: 1.8; */
+li h5{
+  font-size: 22px;
+}
+li p{
+  margin: 10px;
+  font-size: 10px;
+}
+.pink {
+background-color: #efeded;
+}
+
+.yellow {
+background-color: #efeded;
+}
+
+.bule {
+background-color: #efeded;
 }
 </style>

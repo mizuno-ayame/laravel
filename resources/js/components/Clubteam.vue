@@ -2,7 +2,7 @@
     <div>
         <div id="content">
             <header class="column-xs main-xs-between cross-xs-center full-image-wrap">
-            <img class="full-image" src="/clubtop.jpg" alt="">
+                <img :src="'images/clubtop.jpg'" alt="" width="1000px" height="800px">
         </header>
         <main id="main">
             <section class="row-xs main-xs-center cross-xs-center">

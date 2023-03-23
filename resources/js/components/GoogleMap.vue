@@ -22,7 +22,7 @@ export default {
         clearInterval(timer);
         const map = new window.google.maps.Map(this.$refs.map, {
           center: this.myLatLng,
-          zoom: 12,
+          zoom: 16,
         });
         new window.google.maps.Marker({
           position: this.myLatLng,
