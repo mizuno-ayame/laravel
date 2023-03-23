@@ -17,6 +17,9 @@
                     <a href="{{ route('user.events.index') }}">
                         <button type="button" class="btn btn-primary">イベント一覧</button>
                     </a>
+                    <a href="{{ route('user.reserve.index') }}">
+                        <button type="button" class="btn btn-primary">予約一覧</button>
+                    </a>
                     <a href="{{ route('user.reserve.create') }}">
                         <button type="button" class="btn btn-primary">予約登録ページ</button>
                     </a>

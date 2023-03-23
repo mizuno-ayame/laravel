@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
-use App\Reservation;
 use Illuminate\Http\Request;
+use App\Reservation;
+use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class ReserveController extends Controller
 {
@@ -17,7 +19,13 @@ class ReserveController extends Controller
      */
     public function index()
     {
-        //
+        $today = Carbon::today();
+        $reserves = Auth::user()->reserves()
+        ->where('check_in', '>=', $today)
+        ->orderBy('check_in', 'asc')
+        ->get();
+
+        return view('user.reserve.index', ['reserves' => $reserves]);
     }
 
     /**
@@ -93,9 +101,15 @@ class ReserveController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Reservation $reserve)
     {
-        //
+        $today = Carbon::today();
+        $checkIn = new carbon($reserve->check_in);
+        $diff = $today->diffInDays($checkIn);
+         return view('user.reserve.show', [
+            'reserve' => $reserve,
+            'bool' => $diff < 7 ? true : false,
+        ]);
     }
 
     /**
@@ -127,8 +141,18 @@ class ReserveController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Reservation $reserve)
     {
-        //
+        try {
+            DB::beginTransaction();
+            $reserve->delete();
+            DB::commit();
+        } catch (\Exception $e) {
+            DB::rollBack();
+            report($e);
+            return redirect()->route('user.reserve.show', ['reserve' => $reserve->id])->with('error', '処理途中にエラーが発生しました。もう一度お願いします');
+        }
+
+        return redirect()->route('user.reserve.index')->with('status', '予約をキャンセルしました。');
     }
 }
