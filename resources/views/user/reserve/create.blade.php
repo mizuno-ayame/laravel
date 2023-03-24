@@ -207,7 +207,7 @@
                     <input class="modal-user_id" type="hidden" name="user_id" value="">
                     <div class="text-center">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">修正する</button>
-                        <button type="submit" class="btn btn-primary">予約申込</button>
+                        <button type="submit" class="btn btn-primary submitbtn" style="display: none">予約申込</button>
                     </div>
                 </form>
             </div>
@@ -221,41 +221,108 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script>
 $(function(){
-$('#exampleModalCenter').on('show.bs.modal', function() {
-    const user_id = @json(Auth::id());
-    let representative = $('#representative').val();
-    let club_name      = $('input[name="club_name"]').val();
-    let check_in      = $('input[name="check_in"]').val();
-    let start_at      =$('#start_at option:selected').val();
-    let check_out      = $('input[name="check_out"]').val();
-    let end_at      = $('#end_at option:selected').val();
-    let adult_num      = $('input[name="adult_num"]').val();
-    let child_num      = $('input[name="child_num"]').val();
-    let request = $('textarea[name="request"]').val();
-    let information = $('textarea[name="information"]').val();
+    const now = new Date();
+    now.setDate(now.getDate()+7);
+    $('#exampleModalCenter').on('show.bs.modal', function() {
+        const user_id = @json(Auth::id());
+        let representative = $('#representative').val();
+        let club_name      = $('input[name="club_name"]').val();
+        let check_in      = $('input[name="check_in"]').val();
+        let checkIn = new Date(check_in);
+        let start_at      =$('#start_at option:selected').val();
+        let check_out      = $('input[name="check_out"]').val();
+        let checkOut = new Date(check_out);
+        let end_at      = $('#end_at option:selected').val();
+        let adult_num      = $('input[name="adult_num"]').val();
+        let child_num      = $('input[name="child_num"]').val();
+        let request = $('textarea[name="request"]').val();
+        let information = $('textarea[name="information"]').val();
 
-    $('.modal-representative').text(representative).val(representative);
-    $('.modal-club_name').text(club_name).val(club_name);
-    $('.modal-check_in').text(check_in).val(check_in);
-    $('.modal-start_at').text(start_at).val(start_at);
-    $('.modal-check_out').text(check_out).val(check_out);
-    $('.modal-end_at').text(end_at).val(end_at);
-    $('.modal-adult_num').text(adult_num).val(adult_num);
-    $('.modal-child_num').text(child_num).val(child_num);
-    $('.modal-user_id').text(user_id).val(user_id);
-    $('.modal-request').text(request).val(request);
-    $('.modal-information').text(information).val(information);
-    let checkMeal = [];
-    $('input[name="meal"]:checked').each(function() {
-        checkMeal.push($(this).val());
+        //バリデーション
+        let error = false;
+
+        if(!representative){
+            $('.modal-representative').text('お名前が入力されていません');
+            error = true;
+        }else{
+            $('.modal-representative').text(representative).val(representative);
+        }
+
+        if(!club_name){
+            $('.modal-club_name').text('団体名が入力されていません');
+            error = true;
+        }else{
+            $('.modal-club_name').text(club_name).val(club_name);
+        }
+
+        if(!check_in){
+            $('.modal-check_in').text('チェックイン日が入力されていません');
+            error = true;
+        }else if(now > checkIn){
+            $('.modal-check_in').text('チェックイン日は1週間以上後でお願い致します');
+            error = true;
+        }
+        else{
+            $('.modal-check_in').text(check_in).val(check_in);
+        }
+
+        if(!start_at){
+            $('.modal-start_at').text('チェックイン時間が入力されていません');
+            error = true;
+        }else{
+            $('.modal-start_at').text(start_at).val(start_at);
+        }
+
+        if(!check_out){
+            $('.modal-check_out').text('チェックアウト日が入力されていません');
+            error = true;
+        }else if(now > checkOut){
+            $('.modal-check_out').text('チェックアウト日は1週間以上後でお願い致します');
+            error = true;
+        }else{
+            $('.modal-check_out').text(check_out).val(check_out);
+        }
+
+        if(!end_at){
+            $('.modal-end_at').text('チェックアウト時間が入力されていません');
+            error = true;
+        }else{
+            $('.modal-end_at').text(end_at).val(end_at);
+        }
+
+        if(!adult_num){
+            $('.modal-adult_num').text('大人人数が入力されていません');
+            error = true;
+        }else{
+            $('.modal-adult_num').text(adult_num).val(adult_num);
+        }
+
+        if(!child_num){
+            $('.modal-child_num').text('子供人数が入力されていません');
+            error = true;
+        }else{
+            $('.modal-child_num').text(child_num).val(child_num);
+        }
+
+        $('.modal-request').text(request).val(request);
+
+        $('.modal-information').text(information).val(information);
+
+        let checkMeal = [];
+        $('input[name="meal"]:checked').each(function() {
+            checkMeal.push($(this).val());
+        });
         $('.modal-meal').text(checkMeal);
-    });
-    let checkInst = [];
-    $('input[name="institution"]:checked').each(function() {
-        checkInst.push($(this).val());
-        $('.modal-institution').text(checkInst);
-    });
 
-});
+        let checkInst = [];
+        $('input[name="institution"]:checked').each(function() {
+            checkInst.push($(this).val());
+        });
+        $('.modal-institution').text(checkInst);
+
+        if(error)return;
+
+        $('.submitbtn').show();
+    });
 });
 </script>
