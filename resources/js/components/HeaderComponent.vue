@@ -1,4 +1,5 @@
  <template>
+    
         <div class="d-flex justify-content-around align-items-center">
         <li class="nav-item mr-1">
         <router-link v-bind:to="{name: 'company'}">会社概要</router-link>
