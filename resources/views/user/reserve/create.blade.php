@@ -242,24 +242,24 @@ $(function(){
         let error = false;
 
         if(!representative){
-            $('.modal-representative').text('お名前が入力されていません');
+            $('.modal-representative').text('お名前が入力されていません').css('color', 'red');
             error = true;
         }else{
             $('.modal-representative').text(representative).val(representative);
         }
 
         if(!club_name){
-            $('.modal-club_name').text('団体名が入力されていません');
+            $('.modal-club_name').text('団体名が入力されていません').css('color', 'red');
             error = true;
         }else{
             $('.modal-club_name').text(club_name).val(club_name);
         }
 
         if(!check_in){
-            $('.modal-check_in').text('チェックイン日が入力されていません');
+            $('.modal-check_in').text('チェックイン日が入力されていません').css('color', 'red');
             error = true;
         }else if(now > checkIn){
-            $('.modal-check_in').text('チェックイン日は1週間以上後でお願い致します');
+            $('.modal-check_in').text('チェックイン日は1週間以上後でお願い致します').css('color', 'red');
             error = true;
         }
         else{
@@ -267,44 +267,46 @@ $(function(){
         }
 
         if(!start_at){
-            $('.modal-start_at').text('チェックイン時間が入力されていません');
+            $('.modal-start_at').text('チェックイン時間が入力されていません').css('color', 'red');
             error = true;
         }else{
             $('.modal-start_at').text(start_at).val(start_at);
         }
 
         if(!check_out){
-            $('.modal-check_out').text('チェックアウト日が入力されていません');
+            $('.modal-check_out').text('チェックアウト日が入力されていません').css('color', 'red');
             error = true;
         }else if(now > checkOut){
-            $('.modal-check_out').text('チェックアウト日は1週間以上後でお願い致します');
+            $('.modal-check_out').text('チェックアウト日は1週間以上後でお願い致します').css('color', 'red');
             error = true;
         }else{
             $('.modal-check_out').text(check_out).val(check_out);
         }
 
         if(!end_at){
-            $('.modal-end_at').text('チェックアウト時間が入力されていません');
+            $('.modal-end_at').text('チェックアウト時間が入力されていません').css('color', 'red');
             error = true;
         }else{
             $('.modal-end_at').text(end_at).val(end_at);
         }
 
         if(!adult_num){
-            $('.modal-adult_num').text('大人人数が入力されていません');
+            $('.modal-adult_num').text('大人人数が入力されていません').css('color', 'red');
             error = true;
         }else{
             $('.modal-adult_num').text(adult_num).val(adult_num);
         }
 
         if(!child_num){
-            $('.modal-child_num').text('子供人数が入力されていません');
+            $('.modal-child_num').text('子供人数が入力されていません').css('color', 'red');
             error = true;
         }else{
             $('.modal-child_num').text(child_num).val(child_num);
         }
 
         $('.modal-request').text(request).val(request);
+
+        $('.modal-user_id').val(user_id);
 
         $('.modal-information').text(information).val(information);
 

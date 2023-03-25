@@ -12,6 +12,7 @@ use Carbon\Carbon;
 
 class ReserveController extends Controller
 {
+    const RESERVE_LIMIT_NUM = 400;
     /**
      * Display a listing of the resource.
      *
@@ -26,6 +27,17 @@ class ReserveController extends Controller
         ->get();
 
         return view('user.reserve.index', ['reserves' => $reserves]);
+    }
+
+    public function getPastReserve()
+    {
+        $today = Carbon::today();
+        $reserves = Auth::user()->reserves()
+        ->where('check_in', '<=', $today)
+        ->orderBy('check_in', 'asc')
+        ->get();
+
+        return view('user.reserve.indexPast', ['reserves' => $reserves]);
     }
 
     /**
@@ -47,6 +59,41 @@ class ReserveController extends Controller
     public function store(Request $request)
     {
         $data = $this->reserveValidate($request);
+        //予約日が被っていないないかのチェック
+        $user_re=Reservation::where('user_id', $request['user_id'])
+        ->where('check_in', '>=', $data['check_in'])
+        ->where('check_out', '<=', $data['check_out'])
+        ->first();
+        if(!empty($user_re)){
+            return redirect()->route('user.reserve.create')
+            ->with(
+                'error',
+                'お申込みされた日付で予約が入っています。もう一度お願いします'
+            );
+        }
+
+        //宿泊人数のチェック
+        $re=Reservation::select(
+            'adult_num as anum',
+            'child_num as cnum',
+            'check_in',
+            'check_out'
+        )->where('check_in', '>=', $data['check_in'])
+        ->where('check_out', '<=', $data['check_out'])
+        ->get();
+
+        $total=0;
+        foreach($re as $v){
+            $total +=($v->anum+$v->cnum);
+        }
+        if(self::RESERVE_LIMIT_NUM < $total){
+            return redirect()->route('user.reserve.create')
+            ->with(
+                'error',
+                '予約人数が多いです。もう一度お願いします'
+            );
+        }
+
 
         try {
             DB::beginTransaction();
@@ -103,6 +150,9 @@ class ReserveController extends Controller
      */
     public function show(Reservation $reserve)
     {
+        if(Auth::id() !== $reserve->user_id){
+            abort(404);
+        }
         $today = Carbon::today();
         $checkIn = new carbon($reserve->check_in);
         $diff = $today->diffInDays($checkIn);
@@ -143,6 +193,9 @@ class ReserveController extends Controller
      */
     public function destroy(Reservation $reserve)
     {
+        if(Auth::id() !== $reserve->user_id){
+            abort(404);
+        }
         try {
             DB::beginTransaction();
             $reserve->delete();

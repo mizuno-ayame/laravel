@@ -44,6 +44,7 @@ Route::namespace('User')->prefix('user')->name('user.')->group(function () {
         Route::post('/like', 'LikesController@like');
 
         // 予約用
+        Route::get('/index/past', 'ReserveController@getPastReserve')->name('reserve.index.past');
         Route::resource('reserve', 'ReserveController');
     });
 });

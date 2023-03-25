@@ -7,7 +7,7 @@
             {{ session('status') }}
         </div>
     @endif
-    <p>1週間以内の予約はキャンセルができません</p>
+    <p>過去の予約一覧</p>
     <table class="table table-hover">
         <thead>
           <tr>
@@ -33,11 +33,8 @@
 
         </tbody>
       </table>
-      <a href="/user/home">
-        <button type="button" class="btn btn-primary">TOPへ戻る</button>
-    </a>
-    <a href="{{ route('user.reserve.index.past') }}">
-        <button type="button" class="btn btn-primary">過去の一覧</button>
+      <a href="{{ route('user.reserve.index') }}">
+        <button type="button" class="btn btn-primary">一覧に戻る</button>
     </a>
 </div>
 @endsection

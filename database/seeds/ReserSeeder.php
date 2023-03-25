@@ -13,10 +13,10 @@ class ReserSeeder extends Seeder
     {
         DB::table('reservations')->insert([
             [
-                'representative' => 'user1',
+                'representative' => 'user2',
                 'club_name'     => 'club1',
-                'check_in'     => '2023-01-01 00:00:00',
-                'check_out'     => '2023-01-02 00:00:00',
+                'check_in'     => '2023-05-01 00:00:00',
+                'check_out'     => '2023-05-02 00:00:00',
                 'meal'     => '朝,昼,夜',
                 'request'     => 'request',
                 'start_at'     => '18:00',
@@ -24,23 +24,7 @@ class ReserSeeder extends Seeder
                 'adult_num'     => 2,
                 'child_num'     => 5,
                 'institution'     => 'スケートリンク,トレーニングルーム,ミーティングルーム',
-                'infomation'     => '備考',
-                'user_id'     => 1,
-            ],
-
-            [
-                'representative' => 'user1',
-                'club_name'     => 'club1',
-                'check_in'     => '2023-02-01 00:00:00',
-                'check_out'     => '2023-02-02 00:00:00',
-                'meal'     => '朝,昼,夜',
-                'request'     => 'request',
-                'start_at'     => '19:00',
-                'end_at'     => '10:00',
-                'adult_num'     => 2,
-                'child_num'     => 5,
-                'institution'     => 'スケートリンク,トレーニングルーム,ミーティングルーム',
-                'infomation'     => '備考',
+                'information'     => '備考',
                 'user_id'     => 1,
             ],
         ]);
