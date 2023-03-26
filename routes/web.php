@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 
 
@@ -79,3 +77,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
     });
 
 });
+
+Route::get('/{any}', function () {
+    return view('welcome');
+})->where('any', '.*');

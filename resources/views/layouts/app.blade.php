@@ -14,6 +14,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
 
 
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -52,11 +53,13 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
                     @if (request()->is('admin*'))
                     @include('layouts.admin-nav')
                     @else
                     @include('layouts.user-nav')
                     @endif
+                    </ul>
                 </div>
             </div>
         </nav>

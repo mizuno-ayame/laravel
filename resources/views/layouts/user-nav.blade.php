@@ -1,5 +1,4 @@
-<ul class="navbar-nav ml-auto">
-    <!-- Authentication Links -->
+   <!-- Authentication Links -->
     @unless (Auth::guard('user')->check())
         <li class="nav-item">
             <a class="nav-link" href="{{ route('user.login') }}">{{ __('Login') }}</a>
@@ -28,4 +27,4 @@
             </div>
         </li>
     @endunless
-</ul>
+
