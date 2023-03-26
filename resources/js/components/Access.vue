@@ -4,7 +4,7 @@
         <div class="left">
             <div class="text-area">
                 <h2 class="title">
-                    <h1>施設案内</h1>
+                    <h1>交通案内</h1>
                 </h2>
                 <p class="copy">
                     〒384-1305長野県南佐久郡南牧村野辺山1003<br>帝産ロッヂ
@@ -15,10 +15,6 @@
             <img src="images/nobeyama.jpg" alt="">
         </div>
       </div>
-<!--
-    <h1>施設案内</h1>
-    <h4>〒384-1305長野県南佐久郡南牧村野辺山1003</h4>
-    <h3>帝産ロッヂ</h3> -->
 
     <google-map />
     <div id="map" style="height:100px">
@@ -89,7 +85,7 @@ img {
   font-size: 0.875rem;
 }
 .content .left .copy {
-  font-size: 0.875rem;
+  font-size: 1.875rem;
 }
 .content .right {
   width: 65%;
@@ -132,14 +128,5 @@ SP
     width: 100%;
   }
 }
-
-/* h1 {
-    position: relative;
-    padding: 0.1em 0.5em;
-    background: -webkit-linear-gradient(to right, rgb(255, 186, 115), transparent);
-    background: linear-gradient(to right, rgb(255, 186, 115), transparent);
-    color: #545454;
-    font-family: 'Heebo', sans-serif;
-} */
 
 </style>

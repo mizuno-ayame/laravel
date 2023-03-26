@@ -2024,7 +2024,7 @@ var staticRenderFns = [function () {
     staticClass: "text-area"
   }, [_c("h2", {
     staticClass: "title"
-  }, [_c("h1", [_vm._v("施設案内")])]), _vm._v(" "), _c("p", {
+  }, [_c("h1", [_vm._v("交通案内")])]), _vm._v(" "), _c("p", {
     staticClass: "copy"
   }, [_vm._v("\n                    〒384-1305長野県南佐久郡南牧村野辺山1003"), _c("br"), _vm._v("帝産ロッヂ\n                ")])])]), _vm._v(" "), _c("div", {
     staticClass: "right"
@@ -2054,33 +2054,37 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("div", {
-    attrs: {
-      id: "content"
-    }
-  }, [_c("header", {
-    staticClass: "column-xs main-xs-between cross-xs-center full-image-wrap"
-  }, [_c("img", {
-    attrs: {
-      src: "images/clubtop.jpg",
-      alt: "",
-      width: "1000px",
-      height: "800px"
-    }
-  })]), _vm._v(" "), _vm._m(0)])]);
+  return _vm._m(0);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("main", {
+  return _c("div", [_c("div", [_c("div", {
+    staticClass: "content"
+  }, [_c("div", {
+    staticClass: "left"
+  }, [_c("div", {
+    staticClass: "text-area"
+  }, [_c("h2", {
+    staticClass: "title"
+  }, [_c("h1", [_vm._v("スポーツクラブ案内")])]), _vm._v(" "), _c("p", {
+    staticClass: "copy"
+  }, [_vm._v("\n                スピードスケートのクラブチームです\n            ")])])]), _vm._v(" "), _c("div", {
+    staticClass: "right"
+  }, [_c("img", {
+    attrs: {
+      src: "images/clubtop.jpg",
+      alt: ""
+    }
+  })])]), _vm._v(" "), _c("main", {
     attrs: {
       id: "main"
     }
   }, [_c("section", {
     staticClass: "row-xs main-xs-center cross-xs-center"
-  }, [_c("h2", [_vm._v("about us")]), _vm._v(" "), _c("p", [_vm._v("帝産クラブには、小学１年生から社会人の選手が所属しています。ショートトラックがメインのクラブチームになりますが、"), _c("br"), _vm._v("冬はスピードスケートをやっている選手も多数います。初心者経験者問わずクラブ員を募集しています！")])]), _vm._v(" "), _c("section", {
+  }, [_c("h2", [_vm._v("about us")]), _vm._v(" "), _c("p", [_vm._v("クラブには、小学１年生から社会人の選手が所属しています。ショートトラックがメインのクラブチームになりますが、"), _c("br"), _vm._v("冬はスピードスケートをやっている選手も多数います。初心者経験者問わずクラブ員を募集しています！")])]), _vm._v(" "), _c("section", {
     staticClass: "row-xs main-xs-center cross-xs-center"
-  }, [_c("h2", [_vm._v("体験してみませんか")]), _vm._v(" "), _c("p", [_vm._v("帝産クラブでは、体験入部を行っております。費用は一切かかりません！スケート靴も無料でお貸しします！"), _c("br"), _vm._v("1回の体験で入部を決意できなければ2回目もお越しください!!")])])]);
+  }, [_c("h2", [_vm._v("体験してみませんか")]), _vm._v(" "), _c("p", [_vm._v("クラブでは、体験入部を行っております。費用は一切かかりません！スケート靴も無料でお貸しします！"), _c("br"), _vm._v("1回の体験で入部を決意できなければ2回目もお越しください!!")])])])])]);
 }];
 render._withStripped = true;
 
@@ -2101,35 +2105,37 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("div", {
-    attrs: {
-      id: "content"
-    }
-  }, [_c("header", {
-    staticClass: "column-xs main-xs-between cross-xs-center full-image-wrap"
-  }, [_c("img", {
-    attrs: {
-      src: "images/teisanp.png",
-      alt: "",
-      width: "1500px",
-      height: "800px"
-    }
-  })]), _vm._v(" "), _vm._m(0)])]);
+  return _vm._m(0);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("main", {
+  return _c("div", [_c("div", [_c("div", {
+    staticClass: "content"
+  }, [_c("div", {
+    staticClass: "left"
+  }, [_c("div", {
+    staticClass: "text-area"
+  }, [_c("h2", {
+    staticClass: "title"
+  }, [_c("h1", [_vm._v("施設概要")])])])]), _vm._v(" "), _c("div", {
+    staticClass: "right"
+  }, [_c("img", {
+    attrs: {
+      src: "images/teisanp.png",
+      alt: ""
+    }
+  })])]), _vm._v(" "), _c("main", {
     attrs: {
       id: "main"
     }
   }, [_c("section", {
     staticClass: "row-xs main-xs-center cross-xs-center"
-  }, [_c("h2", [_vm._v("about us")]), _vm._v(" "), _c("p", [_vm._v("帝産ロッヂは、１９８１年に総合スポーツ合宿施設として誕生しました。最大収容人数４８０名。野辺山高原は八ヶ岳東麓、標高１３５０ｍの冷涼な地です。八ヶ岳中信高原国立公園内に位置し、"), _c("br"), _vm._v("８月の平均気温は１８度。広大な空と大地、澄んだ空気。アイススケートリンク、弓道場、剣道場、飯盒炊さん場やキャンプファイヤー場などを完備。"), _c("br"), _vm._v("スポーツ合宿、移動教室など専門のスタッフが計画などをお手伝いします。お気軽にご相談下さい。")])]), _vm._v(" "), _c("section", {
+  }, [_c("h2", [_vm._v("about us")]), _vm._v(" "), _c("p", [_vm._v("ロッヂは、１９８１年に総合スポーツ合宿施設として誕生しました。最大収容人数４８０名。野辺山高原は八ヶ岳東麓、標高１３５０ｍの冷涼な地です。八ヶ岳中信高原国立公園内に位置し、"), _c("br"), _vm._v("８月の平均気温は１８度。広大な空と大地、澄んだ空気。アイススケートリンク、弓道場、剣道場、飯盒炊さん場やキャンプファイヤー場などを完備。"), _c("br"), _vm._v("スポーツ合宿、移動教室など専門のスタッフが計画などをお手伝いします。お気軽にご相談下さい。")])]), _vm._v(" "), _c("section", {
     staticClass: "row-xs main-xs-center cross-xs-center"
-  }, [_c("h2", [_vm._v("教育旅行")]), _vm._v(" "), _c("p", [_vm._v("帝産ロッヂでは十数年来、学年全体の皆様と一校一館を基本として受け入れをして参りました。"), _c("br"), _vm._v("分宿では決して味わえない一同にしての食事、普段は体験することのない大部屋での宿泊など、"), _c("br"), _vm._v("オーソドックスな事が一番大切と信じています。"), _c("br"), _vm._v("一日を通して先生と友と一緒に行動し、大切な時間を有効に組み立てる、そのお手伝いをしていくことが帝産ロッヂの使命です。")])]), _vm._v(" "), _c("section", {
+  }, [_c("h2", [_vm._v("教育旅行")]), _vm._v(" "), _c("p", [_vm._v("ロッヂでは十数年来、学年全体の皆様と一校一館を基本として受け入れをして参りました。"), _c("br"), _vm._v("分宿では決して味わえない一同にしての食事、普段は体験することのない大部屋での宿泊など、"), _c("br"), _vm._v("オーソドックスな事が一番大切と信じています。"), _c("br"), _vm._v("一日を通して先生と友と一緒に行動し、大切な時間を有効に組み立てる、そのお手伝いをしていくことが帝産ロッヂの使命です。")])]), _vm._v(" "), _c("section", {
     staticClass: "row-xs main-xs-center cross-xs-center"
-  }, [_c("h2", [_vm._v("スポーツ合宿")]), _vm._v(" "), _c("p", [_vm._v("帝産ロッヂでは、年間を通じて国内外の健全なアスリート育成のための合宿プログラムを提供しております。八ヶ岳東麓・野辺山高原の大自然の中で、充実した各スポーツ施設をご活用ください。"), _c("br"), _vm._v("オリンピックでメダルを取るために作られた「帝産アイススケートトレーニングセンター」を始め、十六間×1,十間×2の三つの弓道場、強い打ち込みにも安全なスプリングフロアを採用した剣道場、"), _c("br"), _vm._v("天然芝のランニングコース、トレーニングジム、一周200mダブルトラックローラースケート場等を備え、施設、環境、価格でトップを目指すアスリート達を応援します。")])])]);
+  }, [_c("h2", [_vm._v("スポーツ合宿")]), _vm._v(" "), _c("p", [_vm._v("ロッヂでは、年間を通じて国内外の健全なアスリート育成のための合宿プログラムを提供しております。八ヶ岳東麓・野辺山高原の大自然の中で、充実した各スポーツ施設をご活用ください。"), _c("br"), _vm._v("オリンピックでメダルを取るために作られた「帝産アイススケートトレーニングセンター」を始め、十六間×1,十間×2の三つの弓道場、強い打ち込みにも安全なスプリングフロアを採用した剣道場、"), _c("br"), _vm._v("天然芝のランニングコース、トレーニングジム、一周200mダブルトラックローラースケート場等を備え、施設、環境、価格でトップを目指すアスリート達を応援します。")])])])])]);
 }];
 render._withStripped = true;
 
@@ -2191,8 +2197,8 @@ var render = function render() {
   return _c("div", [_c("div", {
     ref: "map",
     staticStyle: {
-      height: "500px",
-      width: "800px"
+      height: "800px",
+      width: "100%"
     }
   })]);
 };
@@ -2221,23 +2227,70 @@ var render = function render() {
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("ul", [_c("li", {
-    staticClass: "pink"
-  }, [_c("h5", [_vm._v("宿泊情報")]), _vm._v(" "), _c("p", [_vm._v("1泊1人あたり9,000円（食事付き"), _c("br"), _vm._v("最大480名宿泊可能"), _c("br"), _vm._v("※100人を超える予約の場合は1度ご連絡ください")])]), _vm._v(" "), _c("li", {
-    staticClass: "yellow"
-  }, [_c("h5", [_vm._v("アイスリンク")]), _vm._v(" "), _c("p", [_vm._v("リンク使用料:1時間33,000円（税込）"), _c("br"), _vm._v("暖房費:1時間6,600円（税込）")])]), _vm._v(" "), _c("li", {
-    staticClass: "bule"
-  }, [_c("h5", [_vm._v("道場")]), _vm._v(" "), _c("p", [_vm._v("洗心剣道場:1日10,500円"), _c("br"), _vm._v("洗心弓道場:利用料無料")])])])]);
+  return _c("div", [_c("div", {
+    staticClass: "content"
+  }, [_c("div", {
+    staticClass: "left"
+  }, [_c("div", {
+    staticClass: "text-area"
+  }, [_c("h2", {
+    staticClass: "title"
+  }, [_c("h1", [_vm._v("施設利用料")])]), _vm._v(" "), _c("p", {
+    staticClass: "copy"
+  }, [_vm._v("\n                    大浴場、コインランドリーなどスポーツ合宿に欠かせない設備が整えられています。高原の得難い環境の中で高地トレーニングしませんか。\n                    また、ロッヂより徒歩10分の所に南牧村村営施設があります。予約をしていただければ村民以外の方も御利用頂けます。予約の代行も承っておりますのでお申し付け下さい。\n                ")])])]), _vm._v(" "), _c("div", {
+    staticClass: "right"
+  }, [_c("img", {
+    attrs: {
+      src: "images/icerink.jpg",
+      alt: ""
+    }
+  })])]), _vm._v(" "), _c("div", {
+    staticClass: "Inner"
+  }, [_c("div", {
+    staticClass: "Card"
+  }, [_c("div", {
+    staticClass: "Card-Item"
+  }, [_c("p", {
+    staticClass: "Card-Item-Title1"
+  }, [_vm._v("宿泊情報")]), _vm._v(" "), _c("ul", {
+    staticClass: "Card-Item-List1"
+  }, [_c("li", {
+    staticClass: "Card-Item-List-Text1"
+  }, [_vm._v("1泊1人あたり9,000円（食事付き）")]), _vm._v(" "), _c("li", {
+    staticClass: "Card-Item-List-Text1"
+  }, [_vm._v("最大480名宿泊可能")]), _vm._v(" "), _c("li", {
+    staticClass: "Card-Item-List-Text1"
+  }, [_vm._v("※100人を超える場合はご連絡ください")])])]), _vm._v(" "), _c("div", {
+    staticClass: "Card-Item"
+  }, [_c("p", {
+    staticClass: "Card-Item-Title2"
+  }, [_vm._v("アイスリンク")]), _vm._v(" "), _c("ul", {
+    staticClass: "Card-Item-List2"
+  }, [_c("li", {
+    staticClass: "Card-Item-List-Text2"
+  }, [_vm._v("リンク使用料:1時間33,000円（税込）")]), _vm._v(" "), _c("li", {
+    staticClass: "Card-Item-List-Text2"
+  }, [_vm._v("暖房費:1時間6,600円（税込）")])])]), _vm._v(" "), _c("div", {
+    staticClass: "Card-Item"
+  }, [_c("p", {
+    staticClass: "Card-Item-Title3"
+  }, [_vm._v("道場")]), _vm._v(" "), _c("ul", {
+    staticClass: "Card-Item-List3"
+  }, [_c("li", {
+    staticClass: "Card-Item-List-Text3"
+  }, [_vm._v("洗心剣道場:1日10,500円")]), _vm._v(" "), _c("li", {
+    staticClass: "Card-Item-List-Text3"
+  }, [_vm._v("洗心弓道場:利用料無料")])])])])])]);
 }];
 render._withStripped = true;
 
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HeaderComponent.vue?vue&type=template&id=153bfd55&":
-/*!************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HeaderComponent.vue?vue&type=template&id=153bfd55& ***!
-  \************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HeaderComponent.vue?vue&type=template&id=153bfd55&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HeaderComponent.vue?vue&type=template&id=153bfd55&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2248,7 +2301,11 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", {
+  return _c("div", [_c("div", {
+    attrs: {
+      id: "content"
+    }
+  }, [_c("div", {
     staticClass: "d-flex justify-content-around align-items-center"
   }, [_c("li", {
     staticClass: "nav-item mr-1"
@@ -2258,7 +2315,7 @@ var render = function render() {
         name: "company"
       }
     }
-  }, [_vm._v("会社概要")])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("施設概要")])], 1), _vm._v(" "), _c("li", {
     staticClass: "nav-item mr-1"
   }, [_c("router-link", {
     attrs: {
@@ -2274,7 +2331,7 @@ var render = function render() {
         name: "guide"
       }
     }
-  }, [_vm._v("フロアガイド")])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("ガイド")])], 1), _vm._v(" "), _c("li", {
     staticClass: "nav-item mr-1"
   }, [_c("router-link", {
     attrs: {
@@ -2290,7 +2347,7 @@ var render = function render() {
         name: "clubteam"
       }
     }
-  }, [_vm._v("クラブ紹介")])], 1)]);
+  }, [_vm._v("クラブ紹介")])], 1)])])]);
 };
 var staticRenderFns = [];
 render._withStripped = true;
@@ -2334,10 +2391,10 @@ var staticRenderFns = [function () {
     staticClass: "company"
   }, [_vm._v("OUR SERVICES")]), _vm._v(" "), _c("p", {
     staticClass: "large_company"
-  }, [_vm._v("\n                帝産ロッヂでは、オリンピックでメダルを取るために作られた「帝産アイススケートトレーニングセンター」を始め、その他スポーツ合宿にもご利用頂けます。まずはご相談ください。\n                ")]), _vm._v(" "), _c("a", {
+  }, [_vm._v("\n                ロッヂでは、オリンピックでメダルを取るために作られた「帝産アイススケートトレーニングセンター」を始め、その他スポーツ合宿にもご利用頂けます。まずはご相談ください。\n                ")]), _vm._v(" "), _c("a", {
     staticClass: "btn",
     attrs: {
-      href: "#"
+      href: "./Company"
     }
   }, [_vm._v("詳細はこちら")])]), _vm._v(" "), _c("div", {
     staticClass: "img_company"
@@ -2357,7 +2414,7 @@ var staticRenderFns = [function () {
   }, [_vm._v("\n                東京から約2時間。そこには豊かな自然と、さまざまな可能性が待っています。八ヶ岳東麓・野辺山高原の大自然の中で、充実した各スポーツ施設をご活用ください。\n                ")]), _vm._v(" "), _c("a", {
     staticClass: "btn",
     attrs: {
-      href: "#"
+      href: "./Sport"
     }
   }, [_vm._v("詳細はこちら")])]), _vm._v(" "), _c("div", {
     staticClass: "img_sport"
@@ -2372,12 +2429,12 @@ var staticRenderFns = [function () {
     staticClass: "text"
   }, [_c("h2", {
     staticClass: "guide"
-  }, [_vm._v("フロアガイド")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("施設利用料")]), _vm._v(" "), _c("p", {
     staticClass: "large_guide"
-  }, [_vm._v("\n                最大収容数４８０名の宿泊が可能です。全館利用、またはフロアー貸切り等、人数に合わせて対応させていただきます。\n                ")]), _vm._v(" "), _c("a", {
+  }, [_vm._v("\n                最大収容数４８０名の宿泊が可能です。大浴場、コインランドリーなどスポーツ合宿に欠かせない設備が整えられています。高原の得難い環境の中で高地トレーニングしませんか。\n                ")]), _vm._v(" "), _c("a", {
     staticClass: "btn",
     attrs: {
-      href: "#"
+      href: "./Guide"
     }
   }, [_vm._v("詳細はこちら")])]), _vm._v(" "), _c("div", {
     staticClass: "img_guide"
@@ -2397,7 +2454,7 @@ var staticRenderFns = [function () {
   }, [_vm._v("\n                    野辺山駅から徒歩で約10分。八ヶ岳の東麓、標高1350mの冷涼な野辺山高原に帝産ロッヂはあります。\n                ")]), _vm._v(" "), _c("a", {
     staticClass: "btn",
     attrs: {
-      href: "#"
+      href: "./Access"
     }
   }, [_vm._v("詳細はこちら")])]), _vm._v(" "), _c("div", {
     staticClass: "img_access"
@@ -2414,10 +2471,10 @@ var staticRenderFns = [function () {
     staticClass: "club"
   }, [_vm._v("スケートしませんか")]), _vm._v(" "), _c("p", {
     staticClass: "large_club"
-  }, [_vm._v("\n                    帝産ロッヂではスケートクラブを運営しております。小学生からオリンピックを目指す社会人アスリートまで所属。"), _c("br"), _vm._v("部員は随時募集中！！！\n                ")]), _vm._v(" "), _c("a", {
+  }, [_vm._v("\n                    ロッヂではスケートクラブを運営しております。小学生からオリンピックを目指す社会人アスリートまで所属。"), _c("br"), _vm._v("部員は随時募集中！！！\n                ")]), _vm._v(" "), _c("a", {
     staticClass: "btn",
     attrs: {
-      href: "#"
+      href: "/Clubteam"
     }
   }, [_vm._v("詳細はこちら")])]), _vm._v(" "), _c("div", {
     staticClass: "img_club"
@@ -2462,12 +2519,12 @@ var staticRenderFns = [function () {
     staticClass: "title"
   }, [_c("h1", [_vm._v("スポーツ合宿")])]), _vm._v(" "), _c("p", {
     staticClass: "copy"
-  }, [_vm._v("\n                    帝産ロッヂでは、年間を通じて国内外の健全なアスリート育成のための合宿プログラムを提供しております。八ヶ岳東麓・野辺山高原の大自然の中で、充実した各スポーツ施設をご活用ください。\n                    オリンピックでメダルを取るために作られた「帝産アイススケートトレーニングセンター」を始め、十六間×１，十間×２の三つの弓道場、強い打ち込みにも安全なスプリングフロアを採用した剣道場、天然芝のランニングコース、トレーニングジム、一周200mダブルトラックローラースケート場等を備え、施設、環境、価格でトップを目指すアスリート達を応援します。\n                ")]), _vm._v(" "), _c("a", {
+  }, [_vm._v("\n                    ロッヂでは、年間を通じて国内外の健全なアスリート育成のための合宿プログラムを提供しております。八ヶ岳東麓・野辺山高原の大自然の中で、充実した各スポーツ施設をご活用ください。\n                    オリンピックでメダルを取るために作られた「帝産アイススケートトレーニングセンター」を始め、十六間×１，十間×２の三つの弓道場、強い打ち込みにも安全なスプリングフロアを採用した剣道場、天然芝のランニングコース、トレーニングジム、一周200mダブルトラックローラースケート場等を備え、施設、環境、価格でトップを目指すアスリート達を応援します。\n                ")]), _vm._v(" "), _c("a", {
     staticClass: "btn",
     attrs: {
-      href: "#"
+      href: "./user.login"
     }
-  }, [_vm._v("宿泊予約はこちら")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("詳細はこちら")])])]), _vm._v(" "), _c("div", {
     staticClass: "right"
   }, [_c("img", {
     attrs: {
@@ -6859,7 +6916,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nhtml[data-v-366e118f] {\n  font-size: 100%;\n}\nbody[data-v-366e118f] {\n  font-family: 'Heebo', sans-serif;\n  letter-spacing: 0.2em;\n}\nimg[data-v-366e118f] {\n  max-width: 100%;\n}\n.content[data-v-366e118f] {\n  display: flex;\n  width: 100%;\n  margin: 100px auto;\n}\n.content .left[data-v-366e118f] {\n  width: 35%;\n  position: relative;\n}\n.content .left[data-v-366e118f]::before {\n  content: \"\";\n  width: 163px;\n  height: 100%;\n  background: #fff;\n  position: absolute;\n  right: -81px;\n  transform: skewX(-18deg);\n}\n.content .left .text-area[data-v-366e118f] {\n  position: absolute;\n  top: 60px;\n  left: 60px;\n}\n.content .left .title[data-v-366e118f] {\n  line-height: 1;\n  margin-bottom: 56px;\n}\n.content .left .title h1[data-v-366e118f] {\n  display: block;\n  font-size: 4.375rem;\n  font-weight: bold;\n  margin-bottom: 12px;\n}\n.content .left .title .ja[data-v-366e118f] {\n  display: block;\n  font-size: 0.875rem;\n}\n.content .left .copy[data-v-366e118f] {\n  font-size: 0.875rem;\n}\n.content .right[data-v-366e118f] {\n  width: 65%;\n}\n.content .right img[data-v-366e118f] {\n  width: 100%;\n  height: 500px;\n  vertical-align: bottom;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n/*-------------------------------------------\nSP\n-------------------------------------------*/\n@media screen and (max-width: 900px) {\n.pc[data-v-366e118f] {\n    display: none;\n}\n.content[data-v-366e118f] {\n    flex-direction: column;\n}\n.content .left[data-v-366e118f] {\n    width: 100%;\n    padding: 0 16px;\n    margin-bottom: 20px;\n}\n.content .left[data-v-366e118f]::before {\n    content: none;\n}\n.content .left .title .en[data-v-366e118f] {\n    font-size: 2.25rem;\n}\n.content .left .text-area[data-v-366e118f] {\n    position: static;\n}\n.content .right[data-v-366e118f] {\n    width: 100%;\n}\n}\n\n/* h1 {\n    position: relative;\n    padding: 0.1em 0.5em;\n    background: -webkit-linear-gradient(to right, rgb(255, 186, 115), transparent);\n    background: linear-gradient(to right, rgb(255, 186, 115), transparent);\n    color: #545454;\n    font-family: 'Heebo', sans-serif;\n} */\n\n", ""]);
+exports.push([module.i, "\nhtml[data-v-366e118f] {\n  font-size: 100%;\n}\nbody[data-v-366e118f] {\n  font-family: 'Heebo', sans-serif;\n  letter-spacing: 0.2em;\n}\nimg[data-v-366e118f] {\n  max-width: 100%;\n}\n.content[data-v-366e118f] {\n  display: flex;\n  width: 100%;\n  margin: 100px auto;\n}\n.content .left[data-v-366e118f] {\n  width: 35%;\n  position: relative;\n}\n.content .left[data-v-366e118f]::before {\n  content: \"\";\n  width: 163px;\n  height: 100%;\n  background: #fff;\n  position: absolute;\n  right: -81px;\n  transform: skewX(-18deg);\n}\n.content .left .text-area[data-v-366e118f] {\n  position: absolute;\n  top: 60px;\n  left: 60px;\n}\n.content .left .title[data-v-366e118f] {\n  line-height: 1;\n  margin-bottom: 56px;\n}\n.content .left .title h1[data-v-366e118f] {\n  display: block;\n  font-size: 4.375rem;\n  font-weight: bold;\n  margin-bottom: 12px;\n}\n.content .left .title .ja[data-v-366e118f] {\n  display: block;\n  font-size: 0.875rem;\n}\n.content .left .copy[data-v-366e118f] {\n  font-size: 1.875rem;\n}\n.content .right[data-v-366e118f] {\n  width: 65%;\n}\n.content .right img[data-v-366e118f] {\n  width: 100%;\n  height: 500px;\n  vertical-align: bottom;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n/*-------------------------------------------\nSP\n-------------------------------------------*/\n@media screen and (max-width: 900px) {\n.pc[data-v-366e118f] {\n    display: none;\n}\n.content[data-v-366e118f] {\n    flex-direction: column;\n}\n.content .left[data-v-366e118f] {\n    width: 100%;\n    padding: 0 16px;\n    margin-bottom: 20px;\n}\n.content .left[data-v-366e118f]::before {\n    content: none;\n}\n.content .left .title .en[data-v-366e118f] {\n    font-size: 2.25rem;\n}\n.content .left .text-area[data-v-366e118f] {\n    position: static;\n}\n.content .right[data-v-366e118f] {\n    width: 100%;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -6878,7 +6935,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n    /*\nFlexbox grid: https://github.com/anacoelhovicente/tangerine\n*/\nhtml[data-v-2ea72004] {\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale\n}\nhtml[data-v-2ea72004],\nbody[data-v-2ea72004] {\n  color: #444;\n  font: 400 14px/1.5 Montserrat, sans-serif;\n}\na[data-v-2ea72004],\na[data-v-2ea72004]:hover,\na[data-v-2ea72004]:focus {\n  color: inherit;\n  outline: none;\n  text-decoration: none;\n}\nh3[data-v-2ea72004] {\n  font-size: 1.5rem;\n  margin: 0;\n}\nheader[data-v-2ea72004] {\n  color: #FFF;\n  height: 100vh;\n  text-align: center;\n}\nheader h1[data-v-2ea72004] {\n  font-size: 3rem;\n  line-height: 1.2;\n  margin: 0;\n  padding: 0;\n  flex-grow: 1;\n  z-index: 1\n}\n.down-arr[data-v-2ea72004] {\n  font-size: 2rem;\n  padding: 0 20px 20px 20px;\n  z-index: 1\n}\nsection[data-v-2ea72004] {\n  padding: 40px 100px;\n  text-align: center;\n  width: 100%;\n}\nsection[data-v-2ea72004]:nth-child(2) {\n  background: #ECF0F1;\n}\n.full-image-wrap[data-v-2ea72004] {\n  min-height: 100%;\n  overflow: hidden;\n  position: relative;\n}\n.full-image[data-v-2ea72004] {\n  height: auto;\n  left: 0;\n  min-height: 100%;\n  min-width: 100%;\n  position: absolute;\n  top: 0;\n  width: auto;\n}\n\n\n", ""]);
+exports.push([module.i, "\nhtml[data-v-2ea72004] {\n  font-size: 100%;\n}\nbody[data-v-2ea72004] {\n  font-family: 'Heebo', sans-serif;\n  letter-spacing: 0.2em;\n}\nimg[data-v-2ea72004] {\n  max-width: 100%;\n}\n.content[data-v-2ea72004] {\n  display: flex;\n  width: 100%;\n  margin: 100px auto;\n}\n.content .left[data-v-2ea72004] {\n  width: 35%;\n  position: relative;\n}\n.content .left[data-v-2ea72004]::before {\n  content: \"\";\n  width: 163px;\n  height: 100%;\n  background: #fff;\n  position: absolute;\n  right: -81px;\n  transform: skewX(-18deg);\n}\n.content .left .text-area[data-v-2ea72004] {\n  position: absolute;\n  top: 60px;\n  left: 60px;\n}\n.content .left .title[data-v-2ea72004] {\n  line-height: 1;\n  margin-bottom: 56px;\n}\n.content .left .title h1[data-v-2ea72004] {\n  display: block;\n  font-size: 3.200rem;\n  font-weight: bold;\n  margin-top: 130px;\n}\n.content .left .title .ja[data-v-2ea72004] {\n  display: block;\n  font-size: 0.875rem;\n}\n.content .left .copy[data-v-2ea72004] {\n  font-size: 1.575rem;\n}\n.content .right[data-v-2ea72004] {\n  width: 65%;\n}\n.content .right img[data-v-2ea72004] {\n  width: 100%;\n  height: 500px;\n  vertical-align: bottom;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\nsection[data-v-2ea72004] {\n  padding: 40px 100px;\n  text-align: center;\n  width: 100%;\n}\nsection[data-v-2ea72004]:nth-child(2) {\n  background: #ECF0F1;\n}\n.full-image-wrap[data-v-2ea72004] {\n  min-height: 100%;\n  overflow: hidden;\n  position: relative;\n}\n.full-image[data-v-2ea72004] {\n  height: auto;\n  left: 0;\n  min-height: 100%;\n  min-width: 100%;\n  position: absolute;\n  top: 0;\n  width: auto;\n}\n\n\n", ""]);
 
 // exports
 
@@ -6897,7 +6954,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n    /*\nFlexbox grid: https://github.com/anacoelhovicente/tangerine\n*/\nhtml[data-v-8da0413c] {\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale\n}\nhtml[data-v-8da0413c],\nbody[data-v-8da0413c] {\n  color: #444;\n  font: 400 14px/1.5 Montserrat, sans-serif;\n}\na[data-v-8da0413c],\na[data-v-8da0413c]:hover,\na[data-v-8da0413c]:focus {\n  color: inherit;\n  outline: none;\n  text-decoration: none;\n}\nh3[data-v-8da0413c] {\n  font-size: 1.5rem;\n  margin: 0;\n}\nheader[data-v-8da0413c] {\n  color: #FFF;\n  height: 100vh;\n  text-align: center;\n}\nheader h1[data-v-8da0413c] {\n  font-size: 3rem;\n  line-height: 1.2;\n  margin: 0;\n  padding: 0;\n  flex-grow: 1;\n  z-index: 1\n}\n.down-arr[data-v-8da0413c] {\n  font-size: 2rem;\n  padding: 0 20px 20px 20px;\n  z-index: 1\n}\nsection[data-v-8da0413c] {\n  padding: 40px 100px;\n  text-align: center;\n  width: 100%;\n}\nsection[data-v-8da0413c]:nth-child(2) {\n  background: #ECF0F1;\n}\n.full-image-wrap[data-v-8da0413c] {\n  min-height: 100%;\n  overflow: hidden;\n  position: relative;\n}\n.full-image[data-v-8da0413c] {\n  height: auto;\n  left: 0;\n  min-height: 100%;\n  min-width: 100%;\n  position: absolute;\n  top: 0;\n  width: auto;\n}\n\n\n", ""]);
+exports.push([module.i, "\n    /*\nFlexbox grid: https://github.com/anacoelhovicente/tangerine\n*/\nhtml[data-v-8da0413c] {\n  font-size: 100%;\n}\nbody[data-v-8da0413c] {\n  font-family: 'Heebo', sans-serif;\n  letter-spacing: 0.2em;\n}\nimg[data-v-8da0413c] {\n  max-width: 100%;\n}\n.content[data-v-8da0413c] {\n  display: flex;\n  width: 100%;\n  margin: 100px auto;\n}\n.content .left[data-v-8da0413c] {\n  width: 35%;\n  position: relative;\n}\n.content .left[data-v-8da0413c]::before {\n  content: \"\";\n  width: 163px;\n  height: 100%;\n  background: #fff;\n  position: absolute;\n  right: -81px;\n  transform: skewX(-18deg);\n}\n.content .left .text-area[data-v-8da0413c] {\n  position: absolute;\n  top: 60px;\n  left: 60px;\n}\n.content .left .title[data-v-8da0413c] {\n  line-height: 1;\n  margin-bottom: 56px;\n}\n.content .left .title h1[data-v-8da0413c] {\n  display: block;\n  font-size: 4.375rem;\n  font-weight: bold;\n  margin-top: 130px;\n}\n.content .left .title .ja[data-v-8da0413c] {\n  display: block;\n  font-size: 0.875rem;\n}\n.content .left .copy[data-v-8da0413c] {\n  font-size: 0.875rem;\n}\n.content .right[data-v-8da0413c] {\n  width: 65%;\n}\n.content .right img[data-v-8da0413c] {\n  width: 100%;\n  height: 500px;\n  vertical-align: bottom;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\nsection[data-v-8da0413c] {\n  padding: 40px 100px;\n  text-align: center;\n  width: 100%;\n}\nsection[data-v-8da0413c]:nth-child(2) {\n  background: #ECF0F1;\n}\n\n\n\n\n", ""]);
 
 // exports
 
@@ -6916,7 +6973,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nli[data-v-5692d5a1] {\n\ndisplay: block;\nwidth: 320px;\nheight: 320px;\nmargin: 50px;\nfloat: left;\nline-height: 100px;\ntext-align: center;\nfont-weight: bold;\nborder-radius: 20px;\nborder: solid 1px #35383a;\n}\n/* line-height: 1.8; */\nli h5[data-v-5692d5a1]{\n  font-size: 22px;\n}\nli p[data-v-5692d5a1]{\n  margin: 10px;\n  font-size: 10px;\n}\n.pink[data-v-5692d5a1] {\nbackground-color: #efeded;\n}\n.yellow[data-v-5692d5a1] {\nbackground-color: #efeded;\n}\n.bule[data-v-5692d5a1] {\nbackground-color: #efeded;\n}\n", ""]);
+exports.push([module.i, "\nhtml[data-v-5692d5a1] {\n  font-size: 100%;\n}\nbody[data-v-5692d5a1] {\n  font-family: 'Heebo', sans-serif;\n  letter-spacing: 0.2em;\n}\nimg[data-v-5692d5a1] {\n  max-width: 100%;\n}\n.content[data-v-5692d5a1] {\n  display: flex;\n  width: 100%;\n  margin: 100px auto;\n}\n.content .left[data-v-5692d5a1] {\n  width: 35%;\n  position: relative;\n}\n.content .left[data-v-5692d5a1]::before {\n  content: \"\";\n  width: 163px;\n  height: 100%;\n  background: #fff;\n  position: absolute;\n  right: -81px;\n  transform: skewX(-18deg);\n}\n.content .left .text-area[data-v-5692d5a1] {\n  position: absolute;\n  top: 60px;\n  left: 60px;\n}\n.content .left .title[data-v-5692d5a1] {\n  line-height: 1;\n  margin-bottom: 56px;\n}\n.content .left .title h1[data-v-5692d5a1] {\n  display: block;\n  font-size: 4.375rem;\n  font-weight: bold;\n  margin-bottom: 12px;\n}\n.content .left .title .ja[data-v-5692d5a1] {\n  display: block;\n  font-size: 0.875rem;\n}\n.content .left .copy[data-v-5692d5a1] {\n  font-size: 0.875rem;\n}\n.content .right[data-v-5692d5a1] {\n  width: 65%;\n}\n.content .right img[data-v-5692d5a1] {\n  width: 100%;\n  height: 500px;\n  vertical-align: bottom;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n\n/* テキストボックス */\n.Inner[data-v-5692d5a1] {\n  margin-left: auto;\n  margin-right: auto;\n  max-width: 1200px;\n}\np[data-v-5692d5a1]{\n  margin: 0;\n  padding: 0;\n}\nli[data-v-5692d5a1]{\n  list-style: none;\n}\n.Card[data-v-5692d5a1] {\n  position: relative;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 72px 68px;\n  display: flex;\n  z-index: 2;\n}\n.Card-Item[data-v-5692d5a1] {\n  width: calc((100% - 30px) / 3);\n  height: 400px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  background: #efeded;\n  box-sizing: border-box;\n  border-radius: 20px;\n  border: solid 1px #35383a;\n}\n.Card-Item[data-v-5692d5a1]:nth-child(n+2) {\n  margin-left: 30px;\n}\n.Card-Item-Title1[data-v-5692d5a1], .Card-Item-Title2[data-v-5692d5a1], .Card-Item-Title3[data-v-5692d5a1] {\n  text-align: center;\n  color: #000000;\n  font-weight: bold;\n  font-size: 24px;\n}\n.Card-Item-List1[data-v-5692d5a1] {\n  margin-top: 40px;\n}\n.Card-Item-List2[data-v-5692d5a1] {\n  margin-top: 40px;\n}\n.Card-Item-List3[data-v-5692d5a1] {\n  margin-top: 40px;\n}\n.Card-Item-List-Text1[data-v-5692d5a1] {\n  position: relative;\n  padding-left: 16px;\n  line-height: 1.5em;\n  color: #000000;\n  font-size: 14px;\n}\n.Card-Item-List-Text2[data-v-5692d5a1] {\n  position: relative;\n  padding-left: 16px;\n  line-height: 1.5em;\n  color: #000000;\n  font-size: 14px;\n}\n.Card-Item-List-Text3[data-v-5692d5a1] {\n  position: relative;\n  padding-left: 42px;\n  line-height: 1.5em;\n  color: #000000;\n  font-size: 14px;\n}\n.Card-Item-List-Text1[data-v-5692d5a1]:nth-child(2) {\n  margin: 30px 15px;\n}\n.Card-Item-List-Text2[data-v-5692d5a1]:nth-child(2) {\n  margin: 30px 15px;\n}\n.Card-Item-List-Text3[data-v-5692d5a1]:nth-child(2) {\n  margin: 30px 15px;\n}\n.Card-Item-List-Text1[data-v-5692d5a1]::before {\n  position: absolute;\n  top: 8px;\n  left: 0;\n  border-radius: 50%;\n  margin: 0 16px 0 0;\n  width: 4px;\n  height: 4px;\n  background: #000000;\n  display: inline-block;\n}\n\n\n", ""]);
 
 // exports
 
@@ -6935,7 +6992,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nbody[data-v-f2b6376c] {\n  background-color: #efeded;\n  color: #35383a;\n  font-family: 'Noto Serif JP', serif;\n}\na[data-v-f2b6376c] {\n  color: #35383a;\n  text-decoration: none;\n}\nimg[data-v-f2b6376c] {\n  max-width: 100%;\n}\n.home_company[data-v-f2b6376c] {\n  max-width: 1000px;\n  height: 698px;\n  margin: 100px auto;\n  position: relative;\n}\n.text[data-v-f2b6376c] {\n  max-width: 680px;\n  background-color: #fff;\n  padding: 84px 160px 84px 84px;\n  position: absolute;\n  left: 0;\n  font-family: 'Heebo', sans-serif;\n}\n.text p[data-v-f2b6376c] {\n  line-height: 1.8;\n  margin-bottom: 35px;\n}\n.text .company[data-v-f2b6376c] {\n  border-bottom: solid 1px #35383a;\n  display: inline-block;\n  font-size: 1.875rem;\n  font-weight: normal;\n  margin-bottom: 30px;\n}\n.text .large_company[data-v-f2b6376c] {\n  font-size: 1.875rem;\n}\n.text .btn[data-v-f2b6376c] {\n  display: inline-block;\n  border: solid 1px #35383a;\n  border-radius: 30px;\n  padding: 16px 50px;\n  transition: all 0.3s ease;\n}\n.text .btn[data-v-f2b6376c]:hover {\n  background-color: #efeded;\n}\n.img_company[data-v-f2b6376c] {\n  max-width: 400px;\n  position: absolute;\n  top: 140px;\n  right: 20px;\n}\n.img img[data-v-f2b6376c] {\n  vertical-align: bottom;\n}\n.home_sport[data-v-f2b6376c] {\n  max-width: 1000px;\n  height: 698px;\n  margin: 100px auto;\n  position: relative;\n}\n.text .sport[data-v-f2b6376c] {\n  border-bottom: solid 1px #35383a;\n  display: inline-block;\n  font-size: 1.875rem;\n  font-weight: normal;\n  margin-bottom: 30px;\n}\n.text .large_sport[data-v-f2b6376c] {\n  font-size: 1.875rem;\n}\n.img_sport[data-v-f2b6376c] {\n  max-width: 400px;\n  position: absolute;\n  top: 140px;\n  right: 20px;\n}\n.home_guide[data-v-f2b6376c] {\n  max-width: 1000px;\n  height: 698px;\n  margin: 100px auto;\n  position: relative;\n}\n.text .guide[data-v-f2b6376c] {\n  border-bottom: solid 1px #35383a;\n  display: inline-block;\n  font-size: 1.875rem;\n  font-weight: normal;\n  margin-bottom: 30px;\n}\n.text .large_guide[data-v-f2b6376c] {\n  font-size: 1.875rem;\n}\n.img_guide[data-v-f2b6376c] {\n  max-width: 400px;\n  position: absolute;\n  top: 140px;\n  right: 20px;\n}\n.home_access[data-v-f2b6376c] {\n  max-width: 1000px;\n  height: 698px;\n  margin: 100px auto;\n  position: relative;\n}\n.text .access[data-v-f2b6376c] {\n  border-bottom: solid 1px #35383a;\n  display: inline-block;\n  font-size: 1.875rem;\n  font-weight: normal;\n  margin-bottom: 30px;\n}\n.text .large_access[data-v-f2b6376c] {\n  font-size: 1.875rem;\n}\n.img_access[data-v-f2b6376c] {\n  max-width: 400px;\n  position: absolute;\n  top: 140px;\n  right: 20px;\n}\n.home_club[data-v-f2b6376c] {\n  max-width: 1000px;\n  height: 698px;\n  margin: 100px auto;\n  position: relative;\n}\n.text .club[data-v-f2b6376c] {\n  border-bottom: solid 1px #35383a;\n  display: inline-block;\n  font-size: 1.875rem;\n  font-weight: normal;\n  margin-bottom: 30px;\n}\n.text .large_club[data-v-f2b6376c] {\n  font-size: 1.875rem;\n}\n.img_club[data-v-f2b6376c] {\n  max-width: 400px;\n  position: absolute;\n  top: 140px;\n  right: 20px;\n}\n/* @media screen and (max-width: 1000px) {\n  .content {\n    height: auto;\n    position: static;\n    margin: 0;\n  }\n  .text {\n    max-width: 100%;\n    padding: 60px 20px;\n    position: static;\n  }\n  .img {\n    max-width: 100%;\n    position: static;\n  } */\n/* } */\n", ""]);
+exports.push([module.i, "\nbody[data-v-f2b6376c] {\n  background-color: #efeded;\n  color: #35383a;\n  font-family: 'Noto Serif JP', serif;\n}\na[data-v-f2b6376c] {\n  color: #35383a;\n  text-decoration: none;\n}\nimg[data-v-f2b6376c] {\n  max-width: 100%;\n}\n.home_company[data-v-f2b6376c] {\n  max-width: 1000px;\n  height: 698px;\n  margin: 100px auto;\n  position: relative;\n}\n.text[data-v-f2b6376c] {\n  max-width: 680px;\n  background-color: #fff;\n  margin-top: 50px;\n  padding: 84px 160px 84px 84px;\n  position: absolute;\n  left: 0;\n  font-family: 'Heebo', sans-serif;\n}\n.text p[data-v-f2b6376c] {\n  line-height: 1.8;\n  margin-bottom: 35px;\n}\n.text .company[data-v-f2b6376c] {\n  border-bottom: solid 1px #35383a;\n  display: inline-block;\n  font-size: 1.875rem;\n  font-weight: normal;\n  margin-bottom: 30px;\n}\n.text .large_company[data-v-f2b6376c] {\n  font-size: 1.875rem;\n}\n.text .btn[data-v-f2b6376c] {\n  display: inline-block;\n  border: solid 1px #35383a;\n  border-radius: 30px;\n  padding: 16px 50px;\n  transition: all 0.3s ease;\n}\n.text .btn[data-v-f2b6376c]:hover {\n  background-color: #efeded;\n}\n.img_company[data-v-f2b6376c] {\n  max-width: 400px;\n  position: absolute;\n  top: 140px;\n  right: 20px;\n}\n.img img[data-v-f2b6376c] {\n  vertical-align: bottom;\n}\n.home_sport[data-v-f2b6376c] {\n  max-width: 1000px;\n  height: 698px;\n  margin: 100px auto;\n  position: relative;\n}\n.text .sport[data-v-f2b6376c] {\n  border-bottom: solid 1px #35383a;\n  display: inline-block;\n  font-size: 1.875rem;\n  font-weight: normal;\n  margin-bottom: 30px;\n}\n.text .large_sport[data-v-f2b6376c] {\n  font-size: 1.875rem;\n}\n.img_sport[data-v-f2b6376c] {\n  max-width: 400px;\n  position: absolute;\n  top: 140px;\n  right: 20px;\n}\n.home_guide[data-v-f2b6376c] {\n  max-width: 1000px;\n  height: 698px;\n  margin: 100px auto;\n  position: relative;\n}\n.text .guide[data-v-f2b6376c] {\n  border-bottom: solid 1px #35383a;\n  display: inline-block;\n  font-size: 1.875rem;\n  font-weight: normal;\n  margin-bottom: 30px;\n}\n.text .large_guide[data-v-f2b6376c] {\n  font-size: 1.875rem;\n}\n.img_guide[data-v-f2b6376c] {\n  max-width: 400px;\n  position: absolute;\n  top: 140px;\n  right: 20px;\n}\n.home_access[data-v-f2b6376c] {\n  max-width: 1000px;\n  height: 698px;\n  margin: 100px auto;\n  position: relative;\n}\n.text .access[data-v-f2b6376c] {\n  border-bottom: solid 1px #35383a;\n  display: inline-block;\n  font-size: 1.875rem;\n  font-weight: normal;\n  margin-bottom: 30px;\n}\n.text .large_access[data-v-f2b6376c] {\n  font-size: 1.875rem;\n}\n.img_access[data-v-f2b6376c] {\n  max-width: 400px;\n  position: absolute;\n  top: 140px;\n  right: 20px;\n}\n.home_club[data-v-f2b6376c] {\n  max-width: 1000px;\n  height: 698px;\n  margin: 100px auto;\n  position: relative;\n}\n.text .club[data-v-f2b6376c] {\n  border-bottom: solid 1px #35383a;\n  display: inline-block;\n  font-size: 1.875rem;\n  font-weight: normal;\n  margin-bottom: 30px;\n}\n.text .large_club[data-v-f2b6376c] {\n  font-size: 1.875rem;\n}\n.img_club[data-v-f2b6376c] {\n  max-width: 400px;\n  position: absolute;\n  top: 140px;\n  right: 20px;\n}\n/* @media screen and (max-width: 1000px) {\n  .content {\n    height: auto;\n    position: static;\n    margin: 0;\n  }\n  .text {\n    max-width: 100%;\n    padding: 60px 20px;\n    position: static;\n  }\n  .img {\n    max-width: 100%;\n    position: static;\n  } */\n/* } */\n", ""]);
 
 // exports
 
@@ -54555,7 +54612,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _HeaderComponent_vue_vue_type_template_id_153bfd55___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderComponent.vue?vue&type=template&id=153bfd55& */ "./resources/js/components/HeaderComponent.vue?vue&type=template&id=153bfd55&");
+/* harmony import */ var _HeaderComponent_vue_vue_type_template_id_153bfd55_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderComponent.vue?vue&type=template&id=153bfd55&scoped=true& */ "./resources/js/components/HeaderComponent.vue?vue&type=template&id=153bfd55&scoped=true&");
 /* harmony import */ var _HeaderComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/HeaderComponent.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
@@ -54567,11 +54624,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _HeaderComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _HeaderComponent_vue_vue_type_template_id_153bfd55___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _HeaderComponent_vue_vue_type_template_id_153bfd55___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _HeaderComponent_vue_vue_type_template_id_153bfd55_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _HeaderComponent_vue_vue_type_template_id_153bfd55_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "153bfd55",
   null
   
 )
@@ -54597,19 +54654,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/HeaderComponent.vue?vue&type=template&id=153bfd55&":
-/*!************************************************************************************!*\
-  !*** ./resources/js/components/HeaderComponent.vue?vue&type=template&id=153bfd55& ***!
-  \************************************************************************************/
+/***/ "./resources/js/components/HeaderComponent.vue?vue&type=template&id=153bfd55&scoped=true&":
+/*!************************************************************************************************!*\
+  !*** ./resources/js/components/HeaderComponent.vue?vue&type=template&id=153bfd55&scoped=true& ***!
+  \************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_template_id_153bfd55___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!../../../node_modules/vue-loader/lib??vue-loader-options!./HeaderComponent.vue?vue&type=template&id=153bfd55& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HeaderComponent.vue?vue&type=template&id=153bfd55&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_template_id_153bfd55___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_template_id_153bfd55_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!../../../node_modules/vue-loader/lib??vue-loader-options!./HeaderComponent.vue?vue&type=template&id=153bfd55&scoped=true& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HeaderComponent.vue?vue&type=template&id=153bfd55&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_template_id_153bfd55_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_template_id_153bfd55___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderComponent_vue_vue_type_template_id_153bfd55_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

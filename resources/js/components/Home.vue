@@ -9,9 +9,9 @@
             <div class="text">
                 <h2 class="company">OUR SERVICES</h2>
                 <p class="large_company">
-                帝産ロッヂでは、オリンピックでメダルを取るために作られた「帝産アイススケートトレーニングセンター」を始め、その他スポーツ合宿にもご利用頂けます。まずはご相談ください。
+                ロッヂでは、オリンピックでメダルを取るために作られた「帝産アイススケートトレーニングセンター」を始め、その他スポーツ合宿にもご利用頂けます。まずはご相談ください。
                 </p>
-                <a class="btn" href="#">詳細はこちら</a>
+                <a class="btn" href="./Company">詳細はこちら</a>
             </div>
             <div class="img_company">
                 <img src="images/20200702_171923.jpg" alt="">
@@ -24,7 +24,7 @@
                 <p class="large_sport">
                 東京から約2時間。そこには豊かな自然と、さまざまな可能性が待っています。八ヶ岳東麓・野辺山高原の大自然の中で、充実した各スポーツ施設をご活用ください。
                 </p>
-                <a class="btn" href="#">詳細はこちら</a>
+                <a class="btn" href="./Sport">詳細はこちら</a>
             </div>
             <div class="img_sport">
                 <img src="images/nobeyama.jpg" alt="">
@@ -33,11 +33,11 @@
 
             <div class="home_guide">
             <div class="text">
-                <h2 class="guide">フロアガイド</h2>
+                <h2 class="guide">施設利用料</h2>
                 <p class="large_guide">
-                最大収容数４８０名の宿泊が可能です。全館利用、またはフロアー貸切り等、人数に合わせて対応させていただきます。
+                最大収容数４８０名の宿泊が可能です。大浴場、コインランドリーなどスポーツ合宿に欠かせない設備が整えられています。高原の得難い環境の中で高地トレーニングしませんか。
                 </p>
-                <a class="btn" href="#">詳細はこちら</a>
+                <a class="btn" href="./Guide">詳細はこちら</a>
             </div>
             <div class="img_guide">
                 <img src="images/20200914_213703.jpg" alt="">
@@ -50,7 +50,7 @@
                 <p class="large_access">
                     野辺山駅から徒歩で約10分。八ヶ岳の東麓、標高1350mの冷涼な野辺山高原に帝産ロッヂはあります。
                 </p>
-                <a class="btn" href="#">詳細はこちら</a>
+                <a class="btn" href="./Access">詳細はこちら</a>
             </div>
             <div class="img_access">
                 <img src="images/train.jpg" alt="">
@@ -61,9 +61,9 @@
             <div class="text">
                 <h2 class="club">スケートしませんか</h2>
                 <p class="large_club">
-                    帝産ロッヂではスケートクラブを運営しております。小学生からオリンピックを目指す社会人アスリートまで所属。<br>部員は随時募集中！！！
+                    ロッヂではスケートクラブを運営しております。小学生からオリンピックを目指す社会人アスリートまで所属。<br>部員は随時募集中！！！
                 </p>
-                <a class="btn" href="#">詳細はこちら</a>
+                <a class="btn" href="/Clubteam">詳細はこちら</a>
             </div>
             <div class="img_club">
                 <img src="images/clubtop.jpg" alt="">
@@ -98,6 +98,7 @@ img {
 .text {
   max-width: 680px;
   background-color: #fff;
+  margin-top: 50px;
   padding: 84px 160px 84px 84px;
   position: absolute;
   left: 0;

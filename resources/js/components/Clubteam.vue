@@ -1,17 +1,29 @@
 <template>
     <div>
-        <div id="content">
-            <header class="column-xs main-xs-between cross-xs-center full-image-wrap">
-                <img :src="'images/clubtop.jpg'" alt="" width="1000px" height="800px">
-        </header>
+        <div>
+        <div class="content">
+        <div class="left">
+            <div class="text-area">
+                <h2 class="title">
+                    <h1>スポーツクラブ案内</h1>
+                </h2>
+                <p class="copy">
+                    スピードスケートのクラブチームです
+                </p>
+            </div>
+        </div>
+        <div class="right">
+            <img src="images/clubtop.jpg" alt="">
+        </div>
+      </div>
         <main id="main">
             <section class="row-xs main-xs-center cross-xs-center">
                 <h2>about us</h2>
-                <p>帝産クラブには、小学１年生から社会人の選手が所属しています。ショートトラックがメインのクラブチームになりますが、<br>冬はスピードスケートをやっている選手も多数います。初心者経験者問わずクラブ員を募集しています！</p>
+                <p>クラブには、小学１年生から社会人の選手が所属しています。ショートトラックがメインのクラブチームになりますが、<br>冬はスピードスケートをやっている選手も多数います。初心者経験者問わずクラブ員を募集しています！</p>
             </section>
             <section class="row-xs main-xs-center cross-xs-center">
                 <h2>体験してみませんか</h2>
-                <p>帝産クラブでは、体験入部を行っております。費用は一切かかりません！スケート靴も無料でお貸しします！<br>1回の体験で入部を決意できなければ2回目もお越しください!!</p>
+                <p>クラブでは、体験入部を行っております。費用は一切かかりません！スケート靴も無料でお貸しします！<br>1回の体験で入部を決意できなければ2回目もお越しください!!</p>
             </section>
         </main>
         </div>
@@ -20,55 +32,69 @@
 </template>
 
 <style scoped>
-    /*
-Flexbox grid: https://github.com/anacoelhovicente/tangerine
-*/
 
 html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  font-size: 100%;
 }
-
-html,
 body {
-  color: #444;
-  font: 400 14px/1.5 Montserrat, sans-serif;
+  font-family: 'Heebo', sans-serif;
+  letter-spacing: 0.2em;
+}
+img {
+  max-width: 100%;
 }
 
-a,
-a:hover,
-a:focus {
-  color: inherit;
-  outline: none;
-  text-decoration: none;
+.content {
+  display: flex;
+  width: 100%;
+  margin: 100px auto;
+}
+.content .left {
+  width: 35%;
+  position: relative;
 }
 
-h3 {
-  font-size: 1.5rem;
-  margin: 0;
+.content .left::before {
+  content: "";
+  width: 163px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  right: -81px;
+  transform: skewX(-18deg);
+}
+.content .left .text-area {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+.content .left .title {
+  line-height: 1;
+  margin-bottom: 56px;
 }
 
-header {
-  color: #FFF;
-  height: 100vh;
-  text-align: center;
+.content .left .title h1 {
+  display: block;
+  font-size: 3.200rem;
+  font-weight: bold;
+  margin-top: 130px;
+}
+.content .left .title .ja {
+  display: block;
+  font-size: 0.875rem;
+}
+.content .left .copy {
+  font-size: 1.575rem;
+}
+.content .right {
+  width: 65%;
 }
 
-header h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin: 0;
-  padding: 0;
-  flex-grow: 1;
-  z-index: 1
-}
-
-.down-arr {
-  font-size: 2rem;
-  padding: 0 20px 20px 20px;
-  z-index: 1
+.content .right img {
+  width: 100%;
+  height: 500px;
+  vertical-align: bottom;
+  object-fit: cover;
 }
 
 section {
