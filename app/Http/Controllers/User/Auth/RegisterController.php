@@ -52,13 +52,14 @@ class RegisterController extends Controller
     }
 
     // 登録処理
-    protected function create(array $data)
+    public function create(Request $request)
     {
-        return User::create([
-            'name'     => $data['name'],
-            'tel'      => $data['tel'],
-            'email'    => $data['email'],
-            'password' => Hash::make($data['password']),
+        User::create([
+            'name'     => $request['name'],
+            'tel'      => $request['tel'],
+            'email'    => $request['email'],
+            'password' => Hash::make($request['password']),
         ]);
+        return redirect('/user/home');
     }
 }

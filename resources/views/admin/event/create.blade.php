@@ -54,7 +54,7 @@
                             <label for="image4" class="form-label">画像4</label>
                             <input type="file" class="form-control" id="image4" name="image4" value="{{ old('image4') }}">
                         </div>
-                        <button type="submit" class="btn btn-primary" onclick="return confirm('イベントを登録します。よろしいですか？')">Submit</button>
+                        <button type="submit" class="btn btn-primary" onclick="return confirm('イベントを登録します。よろしいですか？')">登録</button>
                       </form>
                 </div>
             </div>

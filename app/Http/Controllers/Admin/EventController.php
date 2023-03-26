@@ -68,7 +68,7 @@ class EventController extends Controller
             report($e);
             return redirect()->route('admin.events.create')->with('error', '処理途中にエラーが発生しました。もう一度お願いします');
         }
-        return redirect()->route('admin.home.index')->with('status', '登録に成功しました。');
+        return redirect()->route('admin.users.index')->with('status', '登録に成功しました。');
     }
 
     /**
@@ -128,7 +128,7 @@ class EventController extends Controller
             report($e);
             return redirect()->route('admin.events.edit', ['event' => $event->id])->with('error', '処理途中にエラーが発生しました。もう一度お願いします');
         }
-        return redirect()->route('admin.home.index')->with('status', '編集に成功しました。');
+        return redirect()->route('admin.users.index')->with('status', '編集に成功しました。');
     }
 
     /**
@@ -140,7 +140,7 @@ class EventController extends Controller
     public function destroy(Event $event)
     {
         $event->delete();
-        return redirect()->route('admin.home.index')->with('status', '削除しました。');
+        return redirect()->route('admin.users.index')->with('status', '削除しました。');
     }
 
     private function eventValidate($request)

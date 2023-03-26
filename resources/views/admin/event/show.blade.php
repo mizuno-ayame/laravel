@@ -19,7 +19,7 @@
         <div>
             <a class="btn btn-warning m-0" role="button" href="{{ route('admin.events.edit', ['event' => $event->id]) }}">編集する</a>
         </div>
-        <form class="m-0" action="{{ route('admin.events.destroy', ['event' => $event->id]) }}" method="POST">
+        <form class="m-2" action="{{ route('admin.events.destroy', ['event' => $event->id]) }}" method="POST">
             @csrf
             @method('DELETE')
             <input type="submit" value="削除する" class=" btn btn-danger btn-dell" onClick="delete_alert(event);return false;">

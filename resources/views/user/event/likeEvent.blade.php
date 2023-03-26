@@ -25,7 +25,7 @@
 
         </tbody>
       </table>
-      <a href="/">
+      <a href="{{ route('user.login') }}">
         <button type="button" class="btn btn-primary">TOPへ戻る</button>
     </a>
 </div>

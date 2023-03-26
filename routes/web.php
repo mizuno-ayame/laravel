@@ -26,6 +26,7 @@ Route::namespace('User')->prefix('user')->name('user.')->group(function () {
     Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
     Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
     Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
+    Route::post('user/create', 'Auth\RegisterController@create')->name('create');
 
     // ログイン認証後
     Route::middleware('auth:user')->group(function () {

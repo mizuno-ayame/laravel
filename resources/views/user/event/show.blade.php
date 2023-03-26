@@ -4,7 +4,7 @@
 <div class="container mx-auto">
     <div class="card">
         <div class="card-body">
-            <div class="d-flex justify-content-center">
+            <div class="justify-content-center">
                 <img class="border" src="{{ asset('storage/images/' . $event->image1) }}" alt="">
                 <img class="border" src="{{ asset('storage/images/' . $event->image2) }}" alt="">
                 <img class="border" src="{{ asset('storage/images/' . $event->image3) }}" alt="">
@@ -34,12 +34,14 @@
             </span><!-- /.likes -->
         @endif
     @endauth
-    <a href="{{ route('user.events.index') }}">
-        <button type="button" class="btn btn-primary">イベント一覧</button>
-    </a>
-    <a href="{{ route('user.like.index') }}">
-        <button type="button" class="btn btn-primary">お気に入り一覧</button>
-    </a>
+    <div class="d-flex">
+        <a href="{{ route('user.events.index') }}" style="padding: 5px">
+            <button type="button" class="btn btn-primary">イベント一覧</button>
+        </a>
+        <a href="{{ route('user.like.index') }}" style="padding: 5px">
+            <button type="button" class="btn btn-primary">お気に入り一覧</button>
+        </a>
+    </div>
     </div>
 </div>
 @endsection
