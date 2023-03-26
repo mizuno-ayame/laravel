@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Sports Camp Site') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -28,16 +28,16 @@
             <div class="container">
                 @guest
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'Sports Camp') }}
                 </a>
                 @else
                     @if (Auth::guard('admin')->check())
                     <a class="navbar-brand" href="{{ url('/admin/home') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'Sports Camp') }}
                     </a>
                     @else
                     <a class="navbar-brand" href="{{ url('/user/home') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'Sports Camp') }}
                     </a>
                     @endif
                 @endguest
