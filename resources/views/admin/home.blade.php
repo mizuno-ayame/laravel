@@ -1,6 +1,7 @@
 @extends('layouts.app')
-
+<link href="{{ asset('css/img2.css') }}" rel="stylesheet">
 @section('content')
+<div class="back-img"></div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -14,11 +15,11 @@
                         </div>
                     @endif
 
-                    <a href="{{ route('admin.events.index') }}">
-                        <button type="button" class="btn btn-primary">イベント一覧</button>
-                    </a>
                     <a href="{{ route('admin.reserve.index') }}">
                         <button type="button" class="btn btn-primary">予約一覧</button>
+                    </a>
+                    <a href="{{ route('admin.events.index') }}">
+                        <button type="button" class="btn btn-primary">イベント一覧</button>
                     </a>
                     <a href="{{ route('admin.users.index') }}">
                         <button type="button" class="btn btn-primary">ユーザー一覧</button>

@@ -1,11 +1,12 @@
 @extends('layouts.app')
-
+<link href="{{ asset('css/img2.css') }}" rel="stylesheet">
 @section('content')
+<div class="back-img"></div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('管理画面') }}</div>
+                <div class="card-header">{{ __('新規登録') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('admin.register') }}">

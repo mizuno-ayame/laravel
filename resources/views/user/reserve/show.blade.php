@@ -1,6 +1,7 @@
 @extends('layouts.app')
-
+<link href="{{ asset('css/img3.css') }}" rel="stylesheet">
 @section('content')
+<div class="back-img"></div>
 <div class="container mx-auto">
     @if (session('error'))
         <div class="alert alert-danger text-center" role="alert">

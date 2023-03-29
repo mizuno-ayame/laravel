@@ -1,6 +1,7 @@
 @extends('layouts.app')
-
+<link href="{{ asset('css/img.css') }}" rel="stylesheet">
 @section('content')
+<div class="back-img"></div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
