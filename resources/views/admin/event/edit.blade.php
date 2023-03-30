@@ -67,7 +67,7 @@
                             </div>
                             <input type="file" class="form-control" id="image4" name="image4" value="{{ old('image4') }}">
                         </div>
-                        <button type="submit" class="btn btn-primary" onclick="return confirm('内容を変更します。よろしいですか？')">編集</button>
+                        <button type="submit" class="btn btn-primary" onclick="return confirm('内容を変更します。よろしいですか？')">編集完了</button>
                       </form>
                 </div>
             </div>
